@@ -1,0 +1,3733 @@
+[{
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 4.996595410356783,
+		"path": [0, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -115.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 4.996595410356783,
+		"path": [0, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -115.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 5.945723557554286,
+		"path": [0, 26, 18, 19, 25, 30, 29, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -135.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 5.991277436246454,
+		"path": [0, 18, 19, 27, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -135.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 6.988364000000002,
+		"path": [0, 16, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -160.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 6.989199000000001,
+		"path": [0, 16, 15, 14, 13, 3, 4, 5, 12, 8, 11, 20, 21, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -160.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 7.9399320000000015,
+		"path": [0, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 22, 21, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -185.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 7.991897,
+		"path": [0, 28, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 25, 30, 26, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -185.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 8.925873999999999,
+		"path": [0, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -210.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 8.998952999999998,
+		"path": [0, 28, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 23, 22, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -210.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 9.981481333333337,
+		"path": [0, 18, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 12, 5, 4, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -230.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 9.899189999999999,
+		"path": [0, 28, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -230.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 10.973745199999998,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -250.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 10.933437,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 19, 26, 30, 25, 24, 22, 23, 21, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -250.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 11.972045699999997,
+		"path": [0, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 19, 20, 21, 23, 24, 22, 25, 30, 26, 27, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -260.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 11.937352899999999,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 18, 12, 8, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -265.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 12.837735884029515,
+		"path": [0, 26, 27, 28, 16, 15, 14, 13, 3, 4, 17, 5, 6, 2, 1, 7, 8, 9, 10, 11, 20, 21, 22, 23, 24, 29, 30, 25, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -280.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 12.882397109750395,
+		"path": [0, 16, 15, 14, 13, 3, 4, 6, 1, 2, 5, 17, 27, 26, 25, 30, 29, 24, 22, 21, 20, 11, 10, 9, 18, 19, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -245.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 4.620296925575905,
+		"path": [0, 9, 8, 7, 1, 11, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -100.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 4.620296925575905,
+		"path": [0, 9, 8, 7, 1, 11, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -100.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 5.970554251747677,
+		"path": [0, 9, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -150.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 5.970554251747677,
+		"path": [0, 9, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -150.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 6.921664999999998,
+		"path": [0, 11, 10, 9, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -195.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 6.921664999999998,
+		"path": [0, 11, 10, 9, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -195.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 7.870358925575906,
+		"path": [0, 9, 8, 7, 1, 2, 3, 4, 5, 6, 10, 12, 13, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -220.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 7.870358925575906,
+		"path": [0, 9, 8, 7, 1, 2, 3, 4, 5, 6, 10, 12, 13, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -220.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 8.961133999999998,
+		"path": [0, 16, 15, 14, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -260.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 8.961133999999998,
+		"path": [0, 16, 15, 14, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -260.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 9.97369,
+		"path": [0, 7, 16, 14, 15, 17, 18, 19, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -310.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 9.855718999999999,
+		"path": [0, 9, 16, 14, 15, 17, 18, 19, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -310.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 10.95402930424322,
+		"path": [0, 9, 8, 14, 15, 16, 17, 18, 19, 3, 4, 5, 6, 12, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -340.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 10.95402930424322,
+		"path": [0, 9, 8, 14, 15, 16, 17, 18, 19, 3, 4, 5, 6, 12, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -340.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 11.967958999999997,
+		"path": [0, 11, 10, 9, 8, 7, 1, 2, 3, 19, 18, 17, 16, 15, 14, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -375.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 11.998627333333335,
+		"path": [0, 12, 10, 9, 8, 7, 1, 2, 3, 19, 18, 17, 15, 14, 16, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -375.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 12.970862901785864,
+		"path": [0, 11, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -425.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 12.90348930032094,
+		"path": [0, 12, 10, 11, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -425.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.449030000000003,
+		"path": [0, 14, 15, 16, 19, 12, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -370.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.449030000000003,
+		"path": [0, 14, 15, 16, 19, 12, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -370.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.490901333333335,
+		"path": [0, 28, 31, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -420.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.473316666666666,
+		"path": [0, 23, 21, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 28, 25, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -420.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.434798906728999,
+		"path": [0, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -500.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.476908062511748,
+		"path": [0, 28, 30, 11, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -500.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.447888,
+		"path": [0, 8, 9, 29, 28, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 23, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -560.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.453790000000003,
+		"path": [0, 8, 9, 10, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 3, 13, 27, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -560.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.497543,
+		"path": [0, 23, 8, 9, 10, 29, 28, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -620.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.485055000000003,
+		"path": [0, 8, 9, 10, 29, 28, 11, 30, 7, 1, 5, 14, 15, 16, 19, 12, 2, 3, 13, 27, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -620.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.199546861370102,
+		"path": [0, 8, 9, 17, 18, 10, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -650.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.427088959767712,
+		"path": [0, 8, 9, 10, 29, 28, 11, 30, 7, 1, 5, 12, 14, 15, 20, 16, 19, 3, 13, 27, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -650.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.286595456384502,
+		"path": [0, 8, 9, 17, 18, 10, 29, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -690.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.286595456384502,
+		"path": [0, 8, 9, 17, 18, 10, 29, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -690.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.447009666666668,
+		"path": [0, 23, 21, 22, 26, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -720.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 1.563244
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -125.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -125.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -125.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 1.2939649999999991
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -125.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 8, 12, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -145.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 7, 1, 2, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -145.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 8, 12, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -145.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 7, 12, 31],
+		"t0": 1.563244
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -145.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 23, 21, 20, 11, 10, 9, 7, 1, 2, 6, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -165.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 7, 1, 2, 6, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -165.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 23, 21, 20, 11, 10, 9, 7, 1, 2, 6, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -165.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 7.000000000000001,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 23, 21, 20, 11, 10, 9, 7, 1, 2, 6, 31],
+		"t0": 1.563244
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -165.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 5, 4, 3, 14, 15, 16, 27, 31],
+		"t0": 1.498801
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -190.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 7.999999999999999,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 8, 9, 10, 11, 20, 22, 21, 25, 30, 26, 31],
+		"t0": 3.1299819999999956
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -190.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 11, 20, 21, 25, 30, 26, 18, 31],
+		"t0": 3.1575770000000016
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -190.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 7.999999999999999,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 7, 9, 10, 11, 20, 21, 22, 25, 30, 26, 31],
+		"t0": 2.7755483333333304
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -190.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 3.181323000000001
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -220.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 3.181322999999999
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -220.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 3.189759
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -220.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 3.181322999999999
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -220.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -240.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -240.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -240.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 27, 28, 16, 15, 14, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 2.1813230000000097
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -240.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 19, 18, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -260.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 19, 18, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -260.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 23, 21, 20, 11, 10, 9, 7, 1, 2, 6, 5, 4, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 2.4854350000000007
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -260.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 19, 31],
+		"t0": 1.5526999999999997
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -260.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 11.999999999999998,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 8, 9, 10, 11, 20, 21, 23, 22, 24, 25, 29, 30, 26, 19, 18, 31],
+		"t0": 4.915856
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -270.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 29, 30, 26, 19, 18, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -270.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 19, 20, 21, 23, 24, 22, 25, 30, 26, 27, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -260.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 29, 30, 26, 19, 18, 31],
+		"t0": 1.609739856411254
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -270.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 29, 25, 30, 26, 19, 18, 8, 12, 5, 17, 31],
+		"t0": 1.8667483412242032
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -285.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 26, 18, 19, 25, 30, 29, 24, 23, 22, 21, 20, 11, 10, 9, 7, 8, 12, 5, 4, 6, 1, 2, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 1.1652010000000002
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -280.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 12.837735884029518,
+		"path": [0, 26, 27, 28, 16, 15, 14, 13, 3, 4, 17, 5, 6, 2, 1, 7, 8, 9, 10, 11, 20, 21, 22, 23, 24, 29, 30, 25, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -280.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 12.837735884029518,
+		"path": [0, 26, 27, 28, 16, 15, 14, 13, 3, 4, 17, 5, 6, 2, 1, 7, 8, 9, 10, 11, 20, 21, 22, 23, 24, 29, 30, 25, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -280.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 6, 5, 4, 2, 1, 7, 8, 9, 12, 20],
+		"t0": 8.545875000000002
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -150.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 6, 5, 4, 2, 1, 7, 8, 9, 12, 20],
+		"t0": 8.513414
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -150.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 6, 5, 4, 2, 1, 7, 8, 9, 12, 20],
+		"t0": 8.513414
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -150.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 6, 5, 4, 2, 1, 7, 8, 9, 12, 20],
+		"t0": 8.513413999999996
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -150.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 6, 5, 4, 3, 2, 1, 7, 8, 9, 13, 20],
+		"t0": 9.265026
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -195.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 6, 5, 4, 2, 3, 1, 7, 8, 9, 13, 20],
+		"t0": 8.287478
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -195.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 6, 5, 4, 2, 3, 1, 7, 8, 9, 13, 20],
+		"t0": 8.458199999999998
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -195.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 6, 5, 4, 3, 2, 1, 7, 8, 9, 13, 20],
+		"t0": 9.246741666666667
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -195.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 6, 4, 5, 3, 2, 1, 7, 8, 9, 10, 12, 13, 20],
+		"t0": 8.977417
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -220.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 6, 5, 4, 3, 2, 1, 7, 8, 10, 9, 13, 12, 20],
+		"t0": 9.121196000000001
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -220.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 6, 5, 4, 3, 2, 1, 7, 8, 10, 9, 13, 12, 20],
+		"t0": 9.121196000000001
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -220.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 6, 5, 4, 3, 2, 1, 7, 8, 9, 10, 12, 13, 20],
+		"t0": 9.121196000000001
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -220.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 5, 4, 2, 1, 7, 16, 15, 14, 8, 9, 13, 20],
+		"t0": 8.561698
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -265.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.000000000000002,
+		"path": [0, 5, 4, 2, 1, 7, 16, 15, 14, 8, 9, 13, 20],
+		"t0": 8.559747999999997
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -265.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 6, 11, 5, 4, 1, 7, 16, 15, 14, 8, 9, 13, 20],
+		"t0": 7.993751
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -265.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 6, 11, 5, 4, 1, 7, 16, 15, 14, 8, 9, 13, 20],
+		"t0": 7.993751
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -265.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 16, 7, 8, 9, 13, 20],
+		"t0": 7.856884000000001
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -315.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 16, 7, 8, 9, 13, 20],
+		"t0": 7.126787999999998
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -315.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 15, 14, 16, 8, 9, 13, 20],
+		"t0": 5.945129
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -375.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 9.999999999999998,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 15, 14, 16, 8, 9, 13, 20],
+		"t0": 6.049391999999999
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -375.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 15, 14, 16, 8, 9, 13, 20],
+		"t0": 5.158569
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -375.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 15, 14, 16, 8, 9, 13, 20],
+		"t0": 3.902172
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -375.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 3.279734999999999
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -415.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 5.277584999999998
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -415.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 5.3684699999999985
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -415.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 5.277584999999998
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -415.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 12, 10, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 4.283833999999998
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -440.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 10, 9, 13, 12, 20],
+		"t0": 3.279734999999999
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -440.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 6, 11, 10, 9, 8, 7, 1, 16, 14, 15, 17, 18, 19, 3, 2, 4, 5, 13, 12, 20],
+		"t0": 2.887815999999999
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -450.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 16, 15, 14, 1, 7, 8, 9, 10, 11, 12, 13, 20],
+		"t0": 2.712310999999998
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -450.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 11, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 10, 12, 13, 20],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -450.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 12.999999999999998,
+		"path": [0, 6, 11, 10, 9, 8, 7, 16, 14, 15, 17, 18, 19, 3, 2, 1, 4, 5, 12, 13, 20],
+		"t0": 3.2254549999999984
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -450.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.5,
+		"path": [0, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -430.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.5,
+		"path": [0, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 31, 32],
+		"t0": 4.4999999999999964
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -430.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.5,
+		"path": [0, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -430.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 15, 14, 12, 2, 5, 1, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -430.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.500000000000001,
+		"path": [0, 23, 21, 6, 4, 13, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 25, 32],
+		"t0": 3.588102499999997
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -490.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 5, 1, 7, 30, 11, 28, 25, 31, 32],
+		"t0": 3.4999999999999964
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -490.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 5, 1, 7, 30, 11, 28, 25, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -490.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 19, 16, 15, 14, 12, 5, 1, 7, 30, 11, 28, 25, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -490.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.5,
+		"path": [0, 23, 21, 6, 4, 13, 27, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -550.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -550.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.5,
+		"path": [0, 23, 21, 6, 4, 13, 27, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -550.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.5,
+		"path": [0, 23, 21, 6, 4, 13, 27, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -550.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 12, 19, 16, 15, 20, 14, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 7.1547540000000005
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -590.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.499999999999998,
+		"path": [0, 21, 6, 4, 3, 13, 27, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 7.574796000000001
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -590.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 23, 21, 6, 4, 13, 27, 3, 19, 16, 15, 20, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 32],
+		"t0": 7.383924
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -590.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 32],
+		"t0": 7.383923999999999
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -590.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 19, 16, 15, 14, 12, 5, 1, 7, 30, 11, 10, 17, 9, 29, 28, 25, 32],
+		"t0": 4.573497
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -630.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 19, 16, 20, 15, 14, 12, 5, 1, 7, 30, 11, 28, 29, 9, 8, 32],
+		"t0": 2.6914830000000016
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -630.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 21, 6, 4, 3, 13, 27, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 9, 8, 29, 28, 25, 31, 32],
+		"t0": 4.607063000000002
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -630.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 19, 16, 20, 15, 14, 12, 5, 1, 7, 30, 11, 28, 29, 9, 8, 32],
+		"t0": 3.0709560000000025
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -630.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 15, 20, 14, 12, 2, 5, 1, 7, 30, 11, 10, 9, 8, 29, 28, 25, 32],
+		"t0": 3.5257099999999992
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -680.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 32],
+		"t0": 4.029978999999994
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -680.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 10, 17, 9, 8, 29, 25, 31, 32],
+		"t0": 3.2902450000000005
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -680.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 32],
+		"t0": 5.183932000000002
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -680.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 25, 32],
+		"t0": 3.8488380000000006
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -730.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 29, 28, 25, 32],
+		"t0": 2.9213330000000024
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -730.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 31, 22, 32],
+		"t0": 4.335532000000001
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -730.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 10, 18, 17, 9, 29, 25, 31, 32],
+		"t0": 2.428295000000004
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -730.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 31, 22, 32],
+		"t0": 3.0337410000000027
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -770.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 24, 8, 9, 17, 18, 10, 29, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 20, 16, 19, 3, 13, 27, 4, 6, 21, 22, 32],
+		"t0": 2.598575000000004
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -770.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 24, 8, 9, 17, 18, 10, 29, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 20, 16, 19, 27, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 2.3012060000000005
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -770.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 26, 21, 6, 4, 13, 3, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 31, 32],
+		"t0": 2.671131000000001
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -770.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.5,
+		"path": [0, 23, 24, 8, 9, 17, 18, 10, 29, 25, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 20, 16, 19, 3, 13, 27, 4, 6, 21, 26, 22, 31, 32],
+		"t0": 2.0266020000000022
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -800.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.5,
+		"path": [0, 23, 24, 8, 9, 17, 18, 10, 29, 25, 28, 11, 30, 7, 1, 5, 14, 15, 20, 16, 19, 12, 2, 3, 13, 27, 4, 6, 21, 26, 22, 31, 32],
+		"t0": 3.196442999999999
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -800.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.5,
+		"path": [0, 23, 24, 8, 9, 17, 18, 10, 29, 25, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 20, 16, 19, 3, 13, 27, 4, 6, 21, 26, 22, 31, 32],
+		"t0": 2.0266020000000022
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -800.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.5,
+		"path": [0, 23, 24, 8, 9, 17, 18, 10, 29, 25, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 20, 16, 19, 3, 13, 27, 4, 6, 21, 22, 26, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -800.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -115.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -115.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -115.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -115.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 18, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 1, 2, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -135.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 26, 18, 19, 25, 30, 29, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -135.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 26, 18, 19, 25, 30, 29, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -135.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 26, 18, 19, 25, 30, 29, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -135.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 16, 28, 27, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 8, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -160.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 16, 28, 27, 26, 30, 25, 24, 22, 23, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -160.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 16, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -160.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 16, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -160.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 28, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 25, 30, 26, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -185.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 28, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -185.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 22, 21, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -185.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 22, 21, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -185.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 28, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 23, 22, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -210.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 28, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 23, 22, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -210.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -210.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 25, 30, 26, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -210.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 26, 30, 25, 24, 22, 23, 21, 20, 11, 10, 9, 8, 12, 5, 4, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -230.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 18, 26, 30, 25, 24, 22, 23, 21, 20, 11, 10, 9, 12, 5, 4, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -230.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 18, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 12, 5, 4, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -230.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 18, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 12, 5, 4, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -230.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 19, 26, 30, 25, 24, 23, 22, 21, 20, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -250.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -250.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -250.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -250.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 26, 27, 28, 16, 15, 14, 13, 3, 4, 5, 12, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 30, 25, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -265.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 18, 19, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 12, 8, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -270.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 18, 12, 8, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -265.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 18, 19, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 12, 8, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -270.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 18, 27, 28, 16, 15, 14, 13, 3, 4, 2, 1, 6, 5, 17, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -255.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 20, 18, 26, 19, 25, 30, 29, 24, 22, 23, 21, 11, 10, 9, 7, 8, 12, 5, 6, 4, 3, 13, 14, 15, 28, 16, 27, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -260.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 26, 27, 28, 16, 15, 14, 13, 3, 4, 17, 5, 6, 2, 1, 7, 8, 9, 10, 11, 20, 21, 22, 23, 24, 29, 30, 25, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -280.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 26, 27, 28, 16, 15, 14, 13, 3, 4, 17, 5, 6, 2, 1, 7, 8, 9, 10, 11, 20, 21, 22, 23, 24, 29, 30, 25, 19, 18, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -280.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 9, 8, 7, 1, 11, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -100.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 9, 8, 7, 1, 11, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -100.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 9, 8, 7, 1, 11, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -100.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 9, 8, 7, 1, 11, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -100.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 9, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -150.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 9, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -150.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 9, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -150.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 9, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -150.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 11, 10, 9, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -195.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 12, 10, 9, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -195.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 11, 10, 9, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -195.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 11, 10, 9, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -195.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 9, 8, 7, 1, 2, 3, 4, 5, 6, 11, 10, 13, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 9, 8, 7, 1, 2, 3, 4, 5, 6, 11, 10, 13, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 9, 8, 7, 1, 2, 3, 4, 5, 6, 10, 12, 13, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 9, 8, 7, 1, 2, 3, 4, 5, 6, 10, 12, 13, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 16, 15, 14, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -260.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 16, 15, 14, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -260.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 16, 15, 14, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -260.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 16, 15, 14, 8, 7, 1, 2, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -260.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 9, 14, 15, 16, 17, 18, 19, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -310.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 3, 19, 18, 17, 15, 14, 16, 7, 1, 11, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -310.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 7, 16, 14, 15, 17, 18, 19, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -310.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 7, 16, 14, 15, 17, 18, 19, 3, 4, 5, 6, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -310.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 9, 8, 14, 15, 16, 17, 18, 19, 3, 4, 5, 6, 12, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -340.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 9, 8, 14, 15, 16, 17, 18, 19, 3, 4, 5, 6, 12, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -340.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 9, 8, 14, 15, 16, 17, 18, 19, 3, 4, 5, 6, 12, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -340.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 9, 8, 14, 15, 16, 17, 18, 19, 3, 4, 5, 6, 12, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -340.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 12, 10, 9, 8, 7, 1, 2, 3, 19, 18, 17, 15, 14, 16, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -375.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 11, 10, 9, 8, 7, 1, 2, 3, 19, 18, 17, 16, 15, 14, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -375.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 11, 10, 9, 8, 7, 1, 2, 3, 19, 18, 17, 16, 15, 14, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -375.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 11, 10, 9, 8, 7, 1, 2, 3, 19, 18, 17, 16, 15, 14, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -375.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 11, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -425.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 12, 10, 11, 6, 4, 5, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -425.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 11, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -425.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 11, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -425.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.5,
+		"path": [0, 14, 15, 16, 19, 12, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -370.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.5,
+		"path": [0, 14, 15, 16, 19, 12, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -370.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.5,
+		"path": [0, 14, 15, 16, 19, 12, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -370.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.5,
+		"path": [0, 14, 15, 16, 19, 12, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -370.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 28, 7, 14, 15, 16, 19, 12, 2, 3, 13, 27, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -420.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 28, 31, 1, 5, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -420.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 28, 31, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -420.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 28, 31, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -420.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.5,
+		"path": [0, 23, 28, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 3, 13, 27, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -500.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.5,
+		"path": [0, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -500.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.5,
+		"path": [0, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -500.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.5,
+		"path": [0, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -500.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 8, 9, 10, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 3, 13, 27, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -560.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 8, 9, 29, 28, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 23, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -560.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 8, 9, 29, 28, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 23, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -560.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 8, 9, 29, 28, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 23, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -560.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 23, 8, 9, 10, 29, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -620.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 8, 9, 10, 29, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 27, 4, 6, 21, 23, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -620.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 23, 8, 9, 10, 29, 28, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -620.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 23, 8, 9, 10, 29, 28, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -620.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 8, 9, 17, 18, 10, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -650.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 8, 9, 17, 18, 10, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -650.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 8, 9, 17, 18, 10, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -650.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 8, 9, 17, 18, 10, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -650.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 8, 9, 17, 18, 10, 29, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -690.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 8, 9, 17, 18, 10, 29, 28, 11, 30, 7, 1, 5, 12, 14, 15, 16, 19, 2, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -690.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 8, 9, 17, 18, 10, 29, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -690.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 8, 9, 17, 18, 10, 29, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 16, 19, 3, 13, 4, 6, 21, 22, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -690.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 19, 16, 20, 15, 14, 12, 5, 1, 7, 30, 11, 10, 18, 17, 9, 29, 28, 25, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -720.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 22, 26, 21, 6, 4, 13, 3, 2, 19, 16, 15, 14, 12, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -720.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 21, 22, 26, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -720.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 21, 22, 26, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -720.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.5,
+		"path": [0, 23, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 20, 16, 19, 3, 13, 4, 6, 21, 24, 8, 9, 17, 18, 10, 29, 25, 31, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -770.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.5,
+		"path": [0, 23, 22, 28, 11, 30, 7, 1, 5, 14, 15, 20, 16, 19, 12, 2, 3, 13, 4, 6, 21, 24, 8, 9, 17, 18, 10, 29, 25, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -770.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 31, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -770.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.5,
+		"path": [0, 28, 30, 11, 7, 1, 5, 12, 14, 15, 20, 16, 19, 2, 3, 13, 27, 4, 6, 21, 24, 8, 9, 17, 18, 10, 29, 25, 31, 32],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -770.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -125.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 4.9999999999999964
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -125.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 4.938139,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 1.563244
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -125.0
+}, {
+	"instance_name": "1.a",
+	"routes": [{
+		"duration": 4.938139,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 31],
+		"t0": 1.563244
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -125.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 7, 1, 2, 31],
+		"t0": 1.563244
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -145.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 8, 12, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -145.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 5.898831999999999,
+		"path": [0, 18, 19, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 8, 12, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -145.0
+}, {
+	"instance_name": "1.b",
+	"routes": [{
+		"duration": 5.898831999999999,
+		"path": [0, 18, 19, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 8, 12, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -145.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 23, 22, 21, 20, 11, 10, 9, 1, 2, 6, 5, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -165.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 7, 1, 2, 6, 5, 4, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -165.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 6.9518239999999984,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 23, 21, 20, 11, 10, 9, 7, 1, 2, 6, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -165.0
+}, {
+	"instance_name": "1.c",
+	"routes": [{
+		"duration": 6.9518239999999984,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 23, 21, 20, 11, 10, 9, 7, 1, 2, 6, 31],
+		"t0": 1.355826
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -165.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 9, 11, 20, 21, 22, 24, 25, 30, 26, 31],
+		"t0": 9.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -190.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 27, 16, 15, 14, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 24, 25, 30, 26, 31],
+		"t0": 4.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -190.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 5, 4, 3, 14, 15, 16, 27, 31],
+		"t0": 1.498801
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -190.0
+}, {
+	"instance_name": "1.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 12, 5, 4, 3, 14, 15, 16, 27, 31],
+		"t0": 1.498801
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -190.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 3.181322999999999
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 3.181323000000001
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 3.161638999999994
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "1.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 5, 12, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 3.161638999999994
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 9.999999999999998,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 21, 20, 11, 10, 9, 1, 2, 6, 5, 4, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 3.6578060000000026
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -240.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 9.999999999999998,
+		"path": [0, 27, 28, 16, 15, 14, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 2.1813230000000043
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -240.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -240.0
+}, {
+	"instance_name": "1.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 27, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 18, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -240.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 19, 18, 31],
+		"t0": 1.90348
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -260.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 10.999999999999998,
+		"path": [0, 18, 19, 26, 30, 25, 24, 22, 23, 21, 20, 11, 10, 9, 7, 1, 2, 6, 5, 4, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 2.4854350000000025
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -260.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 10.97265223611023,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 19, 18, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -260.0
+}, {
+	"instance_name": "1.g",
+	"routes": [{
+		"duration": 10.97265223611023,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 19, 18, 31],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -260.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 29, 25, 30, 26, 19, 18, 31],
+		"t0": 4.9065468880618255
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -270.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.000000000000002,
+		"path": [0, 18, 19, 26, 25, 30, 29, 24, 22, 23, 21, 20, 11, 10, 9, 8, 7, 1, 2, 6, 5, 4, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 1.6578060000000008
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -275.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 8, 9, 10, 11, 20, 21, 23, 22, 24, 25, 29, 30, 26, 19, 18, 31],
+		"t0": 4.8407650586116056
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -270.0
+}, {
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 8, 9, 10, 11, 20, 21, 23, 22, 24, 25, 29, 30, 26, 19, 18, 31],
+		"t0": 4.8407650586116056
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -270.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 12, 8, 9, 10, 11, 20, 22, 21, 23, 24, 29, 30, 25, 26, 19, 18, 31],
+		"t0": 0.074878
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -280.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 8, 9, 10, 11, 20, 21, 23, 22, 24, 25, 29, 30, 26, 19, 18, 31],
+		"t0": 2.7074845392408466
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -275.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 29, 25, 30, 26, 19, 18, 8, 12, 5, 17, 31],
+		"t0": 1.8619600000000034
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -285.0
+}, {
+	"instance_name": "1.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 27, 28, 16, 15, 14, 13, 3, 4, 6, 2, 1, 7, 9, 10, 11, 20, 21, 22, 23, 24, 29, 25, 30, 26, 19, 18, 8, 12, 5, 17, 31],
+		"t0": 1.8619600000000034
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -285.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 6, 5, 4, 2, 1, 7, 8, 9, 12, 20],
+		"t0": 8.513414
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -150.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 6, 5, 4, 2, 1, 7, 8, 9, 12, 20],
+		"t0": 8.545874999999999
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -150.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 6, 5, 4, 2, 1, 7, 8, 9, 12, 20],
+		"t0": 8.513414
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -150.0
+}, {
+	"instance_name": "2.a",
+	"routes": [{
+		"duration": 5.0,
+		"path": [0, 6, 5, 4, 2, 1, 7, 8, 9, 12, 20],
+		"t0": 8.513414
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -150.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 6, 5, 4, 2, 3, 1, 7, 8, 9, 13, 20],
+		"t0": 8.458199999999998
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -195.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 6.0,
+		"path": [0, 6, 5, 4, 3, 2, 1, 7, 8, 9, 13, 20],
+		"t0": 9.265026
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -195.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 5.994631999999994,
+		"path": [0, 6, 5, 4, 3, 2, 1, 7, 8, 9, 13, 20],
+		"t0": 9.265026
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -195.0
+}, {
+	"instance_name": "2.b",
+	"routes": [{
+		"duration": 5.994631999999994,
+		"path": [0, 6, 5, 4, 3, 2, 1, 7, 8, 9, 13, 20],
+		"t0": 9.265026
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -195.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 6, 5, 4, 2, 3, 1, 7, 8, 9, 10, 12, 13, 20],
+		"t0": 8.336529999999998
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 6, 5, 4, 3, 2, 1, 7, 8, 9, 10, 12, 13, 20],
+		"t0": 9.083134999999999
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 6, 4, 5, 3, 2, 1, 7, 8, 9, 10, 12, 13, 20],
+		"t0": 8.91988433333333
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "2.c",
+	"routes": [{
+		"duration": 7.0,
+		"path": [0, 6, 4, 5, 3, 2, 1, 7, 8, 9, 10, 12, 13, 20],
+		"t0": 8.91988433333333
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -220.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 5, 4, 2, 1, 7, 16, 15, 14, 8, 9, 13, 20],
+		"t0": 8.561698
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -265.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 6, 11, 5, 4, 1, 7, 16, 15, 14, 8, 9, 13, 20],
+		"t0": 7.974727
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -265.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 5, 4, 2, 1, 7, 16, 15, 14, 8, 9, 13, 20],
+		"t0": 8.559747999999995
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -265.0
+}, {
+	"instance_name": "2.d",
+	"routes": [{
+		"duration": 8.0,
+		"path": [0, 5, 4, 2, 1, 7, 16, 15, 14, 8, 9, 13, 20],
+		"t0": 8.559747999999995
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -265.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 16, 7, 8, 9, 13, 20],
+		"t0": 7.914100000000001
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -315.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 16, 7, 8, 9, 13, 20],
+		"t0": 7.126787999999998
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -315.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 16, 7, 8, 9, 13, 20],
+		"t0": 7.720839999999999
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -315.0
+}, {
+	"instance_name": "2.e",
+	"routes": [{
+		"duration": 9.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 16, 7, 8, 9, 13, 20],
+		"t0": 7.720839999999999
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -315.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 9.999999999999993,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 15, 14, 16, 8, 9, 13, 20],
+		"t0": 5.945129000000026
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -375.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 9.999999999999993,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 15, 14, 16, 8, 9, 13, 20],
+		"t0": 5.9451290000000085
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -375.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 15, 14, 16, 8, 9, 13, 20],
+		"t0": 5.7526209999999995
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -375.0
+}, {
+	"instance_name": "2.f",
+	"routes": [{
+		"duration": 10.0,
+		"path": [0, 6, 5, 4, 2, 3, 19, 18, 17, 15, 14, 16, 8, 9, 13, 20],
+		"t0": 5.7526209999999995
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -375.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 3.2874779999999966
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -415.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 2.9021719999999966
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -415.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 3.093386997511926
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -415.0
+}, {
+	"instance_name": "2.g",
+	"routes": [{
+		"duration": 11.0,
+		"path": [0, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 3.093386997511926
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -415.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 10, 12, 13, 20],
+		"t0": 5.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -440.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 6, 11, 10, 9, 8, 7, 16, 14, 15, 17, 18, 19, 3, 2, 1, 4, 5, 13, 20],
+		"t0": 5.0000000000000036
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -440.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 12, 10, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 4.277584999999998
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -440.0
+}, {
+	"instance_name": "2.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 12, 10, 6, 5, 4, 1, 2, 3, 19, 18, 17, 15, 14, 16, 7, 8, 9, 13, 20],
+		"t0": 4.277584999999998
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -440.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 5, 4, 6, 11, 9, 8, 14, 15, 16, 17, 18, 19, 3, 2, 1, 7, 10, 12, 13, 20],
+		"t0": 4.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -450.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 10, 6, 11, 4, 5, 1, 2, 3, 19, 18, 17, 14, 15, 16, 7, 8, 9, 13, 12, 20],
+		"t0": 2.8346979999999977
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -450.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 6, 11, 10, 9, 8, 7, 1, 16, 14, 15, 17, 18, 19, 3, 2, 4, 5, 13, 12, 20],
+		"t0": 2.2560409999999997
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -450.0
+}, {
+	"instance_name": "2.i",
+	"routes": [{
+		"duration": 13.0,
+		"path": [0, 6, 11, 10, 9, 8, 7, 1, 16, 14, 15, 17, 18, 19, 3, 2, 4, 5, 13, 12, 20],
+		"t0": 2.2560409999999997
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -450.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.5,
+		"path": [0, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -430.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.5,
+		"path": [0, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -430.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.493353000000001,
+		"path": [0, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -430.0
+}, {
+	"instance_name": "3.a",
+	"routes": [{
+		"duration": 5.493353000000001,
+		"path": [0, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -430.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 11, 28, 25, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -490.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 5, 1, 7, 30, 11, 28, 25, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -490.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 23, 21, 6, 4, 13, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 25, 32],
+		"t0": 3.5000000000000036
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -490.0
+}, {
+	"instance_name": "3.b",
+	"routes": [{
+		"duration": 6.5,
+		"path": [0, 23, 21, 6, 4, 13, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 25, 32],
+		"t0": 3.5000000000000036
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -490.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.5,
+		"path": [0, 23, 21, 6, 4, 13, 27, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -550.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.499999999999995,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 2.5961455477303605
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -550.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.493561000000003,
+		"path": [0, 23, 21, 6, 4, 13, 27, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -550.0
+}, {
+	"instance_name": "3.c",
+	"routes": [{
+		"duration": 7.493561000000003,
+		"path": [0, 23, 21, 6, 4, 13, 27, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -550.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 23, 21, 6, 4, 13, 27, 3, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 32],
+		"t0": 7.0624579999999995
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -590.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 21, 6, 4, 3, 13, 27, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 7.622007
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -590.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 12, 19, 16, 15, 20, 14, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 6.630498000000001
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -590.0
+}, {
+	"instance_name": "3.d",
+	"routes": [{
+		"duration": 8.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 12, 19, 16, 15, 20, 14, 5, 1, 7, 30, 11, 28, 29, 25, 31, 32],
+		"t0": 6.630498000000001
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -590.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 23, 21, 6, 4, 13, 27, 3, 2, 19, 16, 15, 20, 14, 12, 5, 1, 7, 30, 11, 10, 29, 28, 25, 31, 32],
+		"t0": 6.673442000000001
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -630.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 28, 29, 25, 31, 32],
+		"t0": 3.4916560000000008
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -630.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 19, 16, 15, 14, 12, 5, 1, 7, 30, 11, 10, 17, 9, 29, 28, 25, 32],
+		"t0": 4.500906000000002
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -630.0
+}, {
+	"instance_name": "3.e",
+	"routes": [{
+		"duration": 9.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 19, 16, 15, 14, 12, 5, 1, 7, 30, 11, 10, 17, 9, 29, 28, 25, 32],
+		"t0": 4.500906000000002
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -630.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.499999999999897,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 19, 16, 15, 14, 12, 5, 1, 7, 30, 11, 10, 18, 17, 9, 29, 28, 25, 31, 32],
+		"t0": 2.826750000000107
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -680.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 21, 6, 4, 13, 3, 19, 16, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 25, 31, 32],
+		"t0": 3.0397100000000012
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -680.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 15, 20, 14, 12, 2, 5, 1, 7, 30, 11, 10, 9, 8, 29, 28, 25, 32],
+		"t0": 3.504297000000003
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -680.0
+}, {
+	"instance_name": "3.f",
+	"routes": [{
+		"duration": 10.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 15, 20, 14, 12, 2, 5, 1, 7, 30, 11, 10, 9, 8, 29, 28, 25, 32],
+		"t0": 3.504297000000003
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -680.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 12, 19, 16, 20, 15, 14, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 25, 32],
+		"t0": 3.4498190000000006
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -730.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 28, 10, 18, 17, 9, 29, 25, 31, 32],
+		"t0": 3.4807840000000017
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -730.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 25, 32],
+		"t0": 3.7802890000000016
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -730.0
+}, {
+	"instance_name": "3.g",
+	"routes": [{
+		"duration": 11.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 25, 32],
+		"t0": 3.7802890000000016
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -730.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 21, 6, 4, 3, 13, 27, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 31, 32],
+		"t0": 2.3223149999999997
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -770.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 2, 19, 16, 15, 20, 14, 12, 5, 1, 7, 30, 11, 28, 10, 18, 17, 9, 8, 29, 25, 31, 22, 32],
+		"t0": 3.7397540000000014
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -770.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 31, 22, 32],
+		"t0": 2.6849250000000033
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -770.0
+}, {
+	"instance_name": "3.h",
+	"routes": [{
+		"duration": 12.5,
+		"path": [0, 23, 21, 6, 4, 13, 3, 19, 16, 20, 15, 14, 12, 2, 5, 1, 7, 30, 11, 10, 18, 17, 9, 8, 29, 28, 25, 31, 22, 32],
+		"t0": 2.6849250000000033
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -770.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.5,
+		"path": [0, 23, 24, 8, 9, 17, 18, 10, 29, 25, 28, 11, 30, 7, 1, 5, 2, 12, 14, 20, 15, 16, 19, 3, 13, 27, 4, 6, 21, 22, 26, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -800.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.5,
+		"path": [0, 23, 24, 8, 9, 17, 18, 10, 29, 25, 28, 11, 30, 7, 1, 5, 12, 14, 15, 20, 16, 19, 2, 3, 13, 27, 4, 6, 21, 26, 22, 31, 32],
+		"t0": 2.717076000333332
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -800.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.497327297832582,
+		"path": [0, 23, 24, 8, 9, 17, 18, 10, 29, 25, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 20, 16, 19, 3, 13, 27, 4, 6, 21, 26, 22, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -800.0
+}, {
+	"instance_name": "3.i",
+	"routes": [{
+		"duration": 13.497327297832582,
+		"path": [0, 23, 24, 8, 9, 17, 18, 10, 29, 25, 28, 11, 30, 7, 1, 5, 2, 12, 14, 15, 20, 16, 19, 3, 13, 27, 4, 6, 21, 26, 22, 31, 32],
+		"t0": 2.0
+	}],
+	"solution_type": "vrp",
+	"tags": [],
+	"value": -800.0
+},
+{
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.0,
+		"path": [0, 18, 19, 27, 28, 16, 15, 14, 13, 3, 4, 5, 6, 2, 1, 7, 12, 8, 9, 10, 11, 20, 21, 22, 23, 24, 25, 30, 26, 31],
+		"t0": 0.0
+	}],
+	"solution_type": "vrp",
+	"tags": ["makespan"],
+	"value": -270.0
+},
+{
+	"instance_name": "1.h",
+	"routes": [{
+		"duration": 12.000000000000002,
+		"path": [0, 18, 19, 26, 25, 30, 29, 24, 22, 23, 21, 20, 11, 10, 9, 8, 7, 1, 2, 6, 5, 4, 3, 13, 14, 15, 16, 28, 27, 31],
+		"t0": 1.6578060000000008
+	}],
+	"solution_type": "vrp",
+	"tags": ["duration"],
+	"value": -275.0
+}]
