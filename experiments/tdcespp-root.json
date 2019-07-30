@@ -1,0 +1,35 @@
+{
+  "datasets": [{"name": "sun_et_al_2018"}],
+  "experiments": [
+    {
+      "name": "CTTBF-basic",
+      "executable": "ejor2019",
+      "model_type": "cttbf",
+      "time_limit": 7200,
+      "is_profitable": true,
+      "is_cc": true,
+      "obj_duration": true,
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1}
+    },
+    {
+      "name": "CTTBF-TDFI",
+      "executable": "ejor2019",
+      "model_type": "cttbf",
+      "time_limit": 7200,
+      "is_profitable": true,
+      "is_cc": true,
+      "obj_duration": true,
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1}
+    },
+    {
+      "name": "CTTBF-TDCSI",
+      "executable": "ejor2019",
+      "model_type": "cttbf",
+      "time_limit": 7200,
+      "is_profitable": true,
+      "is_cc": true,
+      "obj_duration": true,
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1}
+    }
+  ]
+}
