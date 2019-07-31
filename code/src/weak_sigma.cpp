@@ -41,7 +41,7 @@ vector<Constraint> WeakSigma::Separate(const Valuation& z, int node_number, int 
 	for (Vertex k: exclude(D.Vertices(), {vrp.o, vrp.d}))
 	{
 		// Removing a vertex from a network equals to removing all incident arcs.
-		auto c = [&] (int i, int j) { return P[k][i] || P[k][j] ? 0.0 : z[x[i][j]]; };
+		auto c = [&] (int i, int j) { return P[k][i] || P[k][j] ? 0.0 : z[x[j][i]]; };
 		
 		double F;
 		STCut ST;
@@ -64,6 +64,7 @@ vector<Constraint> WeakSigma::Separate(const Valuation& z, int node_number, int 
 				for (Vertex j: S_minus_sigma_S)
 					if (vrp.D.IncludesArc({i,j}))
 						left += 1.0 * x[i][j];
+			
 			violated.push_back(left.GEQ(1.0));
 		}
 	}

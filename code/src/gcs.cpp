@@ -36,11 +36,16 @@ vector<Constraint> GCS::Separate(const Valuation& z, int node_number, int count_
 		STCut ST;
 		tie(F, ST) = maxflow_mincut(N, [&](int i, int j) { return z[x[i][j]]; }, k, vrp.d);
 
-		// Flow from k to 0 should be y_k. Otherwise, there is a subtour.
+		// Flow from k to d should be y_k. Otherwise, there is a subtour.
 		// Break it using \sum_{i \in S} \sum_{j \in T} x[i][j] >= y_k.
-		if (epsilon_smaller(F, z[y[k]] - 0.05))
+		if (epsilon_smaller(F, z[y[k]] - 0.1))
 		{
-			violated.push_back(ESUM(i:ST.S, ESUM(j:ST.T, D.IncludesArc({i,j}) ? x[i][j] : Expression())).GEQ(y[k]));
+			Expression left = ESUM(i:ST.S, ESUM(j:ST.T, D.IncludesArc({i,j}) ? x[i][j] : Expression()));
+			Expression right = y[k];
+			violated.push_back(left.GEQ(right));
+			
+			// Validate that the violation is correct.
+			if (epsilon_different(left.Value(z), F)) fail("Incorrect violation GCS");
 		}
 	}
 	return violated;

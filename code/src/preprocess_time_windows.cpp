@@ -200,7 +200,6 @@ void preprocess_time_windows(json& instance, bool is_profitable)
 	
 	// Rule 1: (3.12) 	Upper bound adjustment derived from the latest arrival time at node k from its predecessors,
 	//					for k \in N - {o, d}.
-	clog << instance["time_windows"] << endl;
 	for (Vertex k:exclude(V, {o,d}))
 	{
 		double max_arrival = -INFTY;

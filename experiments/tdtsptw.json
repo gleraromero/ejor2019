@@ -11,8 +11,9 @@
       "obj_duration": true,
       "solver_config": { "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
       "separation_strategy": {
-        "families": ["gcs", "pi", "sigma"],
-        "node_limit": "gcs:1,pi:1,sigma:1"
+        "families": ["gcs", "pi", "sigma", "pisigma"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
       }
     },
     {
@@ -23,7 +24,12 @@
       "is_tw": true,
       "fix_start_to_zero": true,
       "obj_duration": true,
-      "solver_config": { "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": { "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma", "tdfi"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
     },
     {
       "name": "CTTBF-basic (duration)",
@@ -32,7 +38,12 @@
       "time_limit": 7200,
       "is_tw": true,
       "obj_duration": true,
-      "solver_config": { "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": { "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
     },
     {
       "name": "CTTBF-TDTSPTW (duration)",
@@ -41,7 +52,12 @@
       "time_limit": 7200,
       "is_tw": true,
       "obj_duration": true,
-      "solver_config": { "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": { "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma", "tdfi"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
     }
   ]
 }

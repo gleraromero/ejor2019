@@ -32,6 +32,7 @@ void SeparationStrategy::AddFamily(const string& family)
 	iteration_limit[family] = INT_MAX;
 	cuts_per_iteration[family] = INT_MAX;
 	node_limit[family] = INT_MAX;
+	improvement[family] = 0.0;
 }
 
 void SeparationStrategy::SetSeparationRoutine(const string& family, const SeparationRoutine* routine)
@@ -71,7 +72,7 @@ void SeparationStrategy::Print(ostream& os) const
 
 void to_json(json& j, const SeparationStrategy& s)
 {
-	j["families"] = s.Families();
+	if (!s.Families().empty()) j["families"] = s.Families();
 
 	string dependencies_str;
 	for (auto& family: s.Families())
@@ -82,7 +83,7 @@ void to_json(json& j, const SeparationStrategy& s)
 			dependencies_str += dependency + "<" + family;
 		}
 	}
-	j["dependencies"] = dependencies_str;
+	if (!dependencies_str.empty()) j["dependencies"] = dependencies_str;
 	
 	string cut_limit_str;
 	for (auto& family: s.Families())
@@ -91,7 +92,7 @@ void to_json(json& j, const SeparationStrategy& s)
 		if (cut_limit_str != "") cut_limit_str += ",";
 		cut_limit_str += family + ":" + STR(s.cut_limit.at(family));
 	}
-	j["cut_limit"] = cut_limit_str;
+	if (!cut_limit_str.empty()) j["cut_limit"] = cut_limit_str;
 	
 	string iteration_limit_str;
 	for (auto& family: s.Families())
@@ -100,7 +101,7 @@ void to_json(json& j, const SeparationStrategy& s)
 		if (iteration_limit_str != "") iteration_limit_str += ",";
 		iteration_limit_str += family + ":" + STR(s.iteration_limit.at(family));
 	}
-	j["iteration_limit"] = iteration_limit_str;
+	if (!iteration_limit_str.empty()) j["iteration_limit"] = iteration_limit_str;
 	
 	string cuts_per_iteration_str;
 	for (auto& family: s.Families())
@@ -109,7 +110,7 @@ void to_json(json& j, const SeparationStrategy& s)
 		if (cuts_per_iteration_str != "") cuts_per_iteration_str += ",";
 		cuts_per_iteration_str += family + ":" + STR(s.cuts_per_iteration.at(family));
 	}
-	j["cuts_per_iteration"] = cuts_per_iteration_str;
+	if (!cuts_per_iteration_str.empty()) j["cuts_per_iteration"] = cuts_per_iteration_str;
 	
 	string node_limit_str = "";
 	for (auto& family: s.Families())
@@ -118,16 +119,25 @@ void to_json(json& j, const SeparationStrategy& s)
 		if (node_limit_str != "") node_limit_str += ",";
 		node_limit_str += family + ":" + STR(s.node_limit.at(family));
 	}
-	j["node_limit"] = node_limit_str;
+	if (!node_limit_str.empty())j["node_limit"] = node_limit_str;
+	
+	string improvement_str = "";
+	for (auto& family: s.Families())
+	{
+		if (s.improvement.at(family) == 0.0) continue;
+		if (improvement_str != "") improvement_str += ",";
+		improvement_str += family + ":" + STR(s.improvement.at(family));
+	}
+	if (!improvement_str.empty()) j["improvement"] = improvement_str;
 }
 
 void from_json(const json& j, SeparationStrategy& s)
 {
-	for (auto& family: j["families"]) s.AddFamily(family);
+	if (has_key(j, "families")) for (auto& family: j["families"]) s.AddFamily(family);
 	// Parse cut_limit.
 	// Example: {"cut_limit": "f1:50, f2: 60"}.
 	// Example: {"cut_limit": "*:100"} <- * means all cuts.
-	if (has_key(j, "cut_limit"))
+	if (has_key(j, "cut_limit") && j["cut_limit"] != "")
 	{
 		auto limits = split(j["cut_limit"], ',');
 		for (auto& limit: limits)
@@ -149,7 +159,7 @@ void from_json(const json& j, SeparationStrategy& s)
 	// Parse iteration_limit.
 	// Example: {"iteration_limit": "f1:50, f2: 60"}.
 	// Example: {"iteration_limit": "*:100"} <- * means all cuts.
-	if (has_key(j, "iteration_limit"))
+	if (has_key(j, "iteration_limit") && j["iteration_limit"] != "")
 	{
 		auto limits = split(j["iteration_limit"], ',');
 		for (auto& limit: limits)
@@ -171,7 +181,7 @@ void from_json(const json& j, SeparationStrategy& s)
 	// Parse cuts_per_iteration.
 	// Example: {"cuts_per_iteration": "f1:50, f2: 60"}.
 	// Example: {"cuts_per_iteration": "*:100"} <- * means all cuts.
-	if (has_key(j, "cuts_per_iteration"))
+	if (has_key(j, "cuts_per_iteration") && j["cuts_per_iteration"] != "")
 	{
 		auto limits = split(j["cuts_per_iteration"], ',');
 		for (auto& limit: limits)
@@ -193,7 +203,7 @@ void from_json(const json& j, SeparationStrategy& s)
 	// Parse node_limit.
 	// Example: {"node_limit": "f1:50, f2: 60"}.
 	// Example: {"node_limit": "*:100"} <- * means all cuts.
-	if (has_key(j, "node_limit"))
+	if (has_key(j, "node_limit") && j["node_limit"] != "")
 	{
 		auto limits = split(j["node_limit"], ',');
 		for (auto& limit: limits)
@@ -212,10 +222,32 @@ void from_json(const json& j, SeparationStrategy& s)
 			}
 		}
 	}
+	// Parse improvement.
+	// Example: {"improvement": "f1:0.1, f2: 0.0"}.
+	// Example: {"improvement": "*:0.1"} <- * means all cuts.
+	if (has_key(j, "improvement") && j["improvement"] != "")
+	{
+		auto limits = split(j["improvement"], ',');
+		for (auto& limit: limits)
+		{
+			auto split_limit = split(limit, ':');
+			string f = trim(split_limit[0]);
+			double l = atof(trim(split_limit[1]).c_str());
+			if (f == "*")
+			{
+				for (auto& family: s.Families())
+					s.improvement[family] = l;
+			}
+			else
+			{
+				s.improvement[f] = l;
+			}
+		}
+	}
 	
 	// Parse dependencies.
 	// Example: {"dependencies": "f1<f2, f3 < f4"}.
-	if (has_key(j, "dependencies"))
+	if (has_key(j, "dependencies") && j["dependencies"] != "")
 	{
 		// Dependencies is a string with clauses f1<f2 (meaning family f2 depends on family f1), separated by commas.
 		auto dependencies = split(j["dependencies"], ',');

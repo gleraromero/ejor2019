@@ -12,15 +12,16 @@
 
 namespace ejor2019
 {
-// The weak-sigma inequalities are the following:
-//	Given a vertex k \subset V - {o,d}, k \in S \subset V - {o,d}.
-// 	\sum_{i \in V - S - SIGMA(S)} \sum_{j \in S - SIGMA(S)} x_ij >= 1.
+// The sigma inequalities are the following:
+//	Let S \subset V - {o, d} be a set of vertices, then the sigma-inequalities are:
+// 		\sum_{i \in V - S - \sigma(S)} \sum_{j \in S - \sigma(S)} x_ij >= 1.
 //
+// The weak-sigma inequalities are a special case of the sigma inequalities.
 // The separation routine does the following:
 // 	1) Fixes a vertex i.
-//	2) Reverse digraph.
-// 	2) Removes all vertices k \in SIGMA(i).
-// 	3) Solves a max-flow from i to o.
+//	2) Reverses the support digraph.
+// 	3) Removes all vertices k \in \sigma(i).
+// 	4) Solves a max-flow from i to o.
 // If the flow is smaller than 1 then it means there is a violated inequality using set S from min-cut.
 class WeakSigma : public goc::SeparationRoutine
 {

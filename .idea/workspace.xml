@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="ejor2019" targetName="ejor2019" />
+      <config projectName="ejor2019" targetName="goc" />
+    </generated>
+  </component>
+  <component name="CMakeSettings" AUTO_RELOAD="true">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ed418533-a406-46b4-964b-794b783684c7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/code/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/goc/include/goc/linear_programming/cuts/separation_algorithm.h" beforeDir="false" afterPath="$PROJECT_DIR$/code/goc/include/goc/linear_programming/cuts/separation_algorithm.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/goc/include/goc/linear_programming/cuts/separation_strategy.h" beforeDir="false" afterPath="$PROJECT_DIR$/code/goc/include/goc/linear_programming/cuts/separation_strategy.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/goc/src/linear_programming/cuts/separation_algorithm.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/goc/src/linear_programming/cuts/separation_algorithm.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/goc/src/linear_programming/cuts/separation_strategy.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/goc/src/linear_programming/cuts/separation_strategy.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/include/weak_pi.h" beforeDir="false" afterPath="$PROJECT_DIR$/code/include/weak_pi.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/include/weak_sigma.h" beforeDir="false" afterPath="$PROJECT_DIR$/code/include/weak_sigma.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/gcs.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/gcs.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/model.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/model.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/preprocess_time_windows.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/preprocess_time_windows.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/weak_pi.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/weak_pi.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/src/weak_sigma.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/code/src/weak_sigma.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/experiments/tdtsptw.json" beforeDir="false" afterPath="$PROJECT_DIR$/experiments/tdtsptw.json" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FavoritesManager">
+    <favorites_list name="ejor2019" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="ProjectId" id="1Ojt1ckdrVEsK2TIN67kLgFowkD" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/include" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/include" />
+      <recent name="$PROJECT_DIR$/experiments" />
+      <recent name="$PROJECT_DIR$/code/src" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="CMake Application.ejor2019">
+    <configuration name="ejor2019" type="CMakeRunConfiguration" factoryName="Application" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ejor2019" TARGET_NAME="ejor2019" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="ejor2019" RUN_TARGET_NAME="ejor2019">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="goc" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="ejor2019" TARGET_NAME="goc" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.ejor2019" />
+      <item itemvalue="CMake Application.goc" />
+    </list>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed418533-a406-46b4-964b-794b783684c7" name="Default Changelist" comment="" />
+      <created>1564502619396</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1564502619396</updated>
+      <workItem from="1564502620605" duration="23132000" />
+      <workItem from="1564584532609" duration="16795000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/code/src/tdfi.cpp</url>
+          <line>152</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

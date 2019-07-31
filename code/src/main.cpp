@@ -20,6 +20,9 @@
 #include "gcs.h"
 #include "weak_pi.h"
 #include "weak_sigma.h"
+#include "weak_pisigma.h"
+#include "tdfi.h"
+#include "tdcsi.h"
 
 using namespace std;
 using namespace goc;
@@ -148,13 +151,20 @@ int main()
 	solver.config = solver_config;
 	solver.separation_strategy = separation_strategy;
 	clog << separation_strategy << endl;
+	
 	// Add separation routines to the strategy.
 	GCS gcs(vrp, model->x, model->y);
 	WeakPi weak_pi(vrp, model->x);
-	WeakPi weak_sigma(vrp, model->x);
+	WeakSigma weak_sigma(vrp, model->x);
+	WeakPiSigma weak_pisigma(vrp, model->x);
+	TDFI tdfi(vrp, model->xx);
+	TDCSI tdcsi(vrp, model->y, model->xx);
 	solver.separation_strategy.SetSeparationRoutine("gcs", &gcs);
 	solver.separation_strategy.SetSeparationRoutine("pi", &weak_pi);
 	solver.separation_strategy.SetSeparationRoutine("sigma", &weak_sigma);
+	solver.separation_strategy.SetSeparationRoutine("pisigma", &weak_pisigma);
+	solver.separation_strategy.SetSeparationRoutine("tdfi", &tdfi);
+	solver.separation_strategy.SetSeparationRoutine("tdcsi", &tdcsi);
 
 	// Execute initial heuristic.
 	clog << "Executing initial heuristic" << endl;

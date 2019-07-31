@@ -61,6 +61,7 @@ vector<Constraint> WeakPi::Separate(const Valuation& z, int node_number, int cou
 				for (Vertex j: T_minus_pi_S)
 					if (vrp.D.IncludesArc({i,j}))
 						left += 1.0 * x[i][j];
+			
 			violated.push_back(left.GEQ(1.0));
 		}
 	}

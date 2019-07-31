@@ -22,7 +22,6 @@ void Model::AddTimeWindowConstraints()
 
 void Model::FixStartTo0()
 {
-	clog << vrp.tau[0] << endl;
 	f->SetVariableBound(t[vrp.o], 0.0, 0.0);
 }
 

@@ -1,2 +1,2 @@
-# ejor2019
-A branch and cut algorithm for the time-dependent profitable tour problem with resource constraints.
+# euroalio2018
+Integer programming formulations for the time-dependent elementary shortest path problem with resource constraints

@@ -19,6 +19,6 @@ add_subdirectory(goc)
 include_directories(goc/include)
 
 # Create binaries.
-add_executable(ejor2019 src/main.cpp src/vrp_instance.cpp src/preprocess_travel_times.cpp src/gcs.cpp src/preprocess_service_waiting.cpp src/preprocess_time_windows.cpp src/preprocess_capacity.cpp src/ttbf.cpp src/cttbf.cpp src/model.cpp src/weak_pi.cpp src/weak_sigma.cpp)
+add_executable(ejor2019 src/main.cpp src/vrp_instance.cpp src/preprocess_travel_times.cpp src/gcs.cpp src/preprocess_service_waiting.cpp src/preprocess_time_windows.cpp src/preprocess_capacity.cpp src/ttbf.cpp src/cttbf.cpp src/model.cpp src/weak_pi.cpp src/weak_sigma.cpp src/weak_pisigma.cpp src/tdfi.cpp src/tdcsi.cpp)
 target_link_libraries(ejor2019 goc)
 target_link_libraries(ejor2019)
