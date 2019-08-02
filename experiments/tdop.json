@@ -5,39 +5,125 @@
       "name": "CTTBF-basic (makespan)",
       "executable": "ejor2019",
       "model_type": "cttbf",
+      "start_type": "heuristic",
       "time_limit": 7200,
       "is_profitable": true,
       "is_op": true,
       "fix_start_to_zero": true,
-      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1}
+      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1},
+      "separation_strategy": {
+        "families": ["gcs"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
     },
     {
       "name": "CTTBF-TDOP (makespan)",
       "executable": "ejor2019",
       "model_type": "cttbf",
+      "start_type": "heuristic",
       "time_limit": 7200,
       "is_profitable": true,
       "is_op": true,
       "fix_start_to_zero": true,
-      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1}
+      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1},
+      "separation_strategy": {
+        "families": ["gcs", "tdfi"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
+    },
+    {
+      "name": "CTTBF-basic (makespan, bks)",
+      "executable": "ejor2019",
+      "model_type": "cttbf",
+      "start_type": "bks",
+      "time_limit": 7200,
+      "is_profitable": true,
+      "is_op": true,
+      "fix_start_to_zero": true,
+      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1},
+      "separation_strategy": {
+        "families": ["gcs"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
+    },
+    {
+      "name": "CTTBF-TDOP (makespan, bks)",
+      "executable": "ejor2019",
+      "model_type": "cttbf",
+      "start_type": "bks",
+      "time_limit": 7200,
+      "is_profitable": true,
+      "is_op": true,
+      "fix_start_to_zero": true,
+      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1},
+      "separation_strategy": {
+        "families": ["gcs", "tdfi"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
     },
     {
       "name": "CTTBF-basic (duration)",
       "executable": "ejor2019",
       "model_type": "cttbf",
+      "start_type": "heuristic",
       "time_limit": 7200,
       "is_profitable": true,
       "is_op": true,
-      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1}
+      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1},
+      "separation_strategy": {
+        "families": ["gcs"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
     },
     {
       "name": "CTTBF-TDOP (duration)",
       "executable": "ejor2019",
       "model_type": "cttbf",
+      "start_type": "heuristic",
       "time_limit": 7200,
       "is_profitable": true,
       "is_op": true,
-      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1}
+      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1},
+      "separation_strategy": {
+        "families": ["gcs", "tdfi"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
+    },
+    {
+      "name": "CTTBF-basic (duration, bks)",
+      "executable": "ejor2019",
+      "model_type": "cttbf",
+      "start_type": "bks",
+      "time_limit": 7200,
+      "is_profitable": true,
+      "is_op": true,
+      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1},
+      "separation_strategy": {
+        "families": ["gcs"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
+    },
+    {
+      "name": "CTTBF-TDOP (duration, bks)",
+      "executable": "ejor2019",
+      "model_type": "cttbf",
+      "start_type": "bks",
+      "time_limit": 7200,
+      "is_profitable": true,
+      "is_op": true,
+      "solver_config": {"CPXPARAM_MIP_Tolerances_MIPGap":0.000001,"CPXPARAM_Parallel":1, "CPXPARAM_Threads":8, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_MIP_Strategy_Probe":2, "CPXPARAM_MIP_Strategy_VariableSelect":2, "CPXPARAM_MIP_Strategy_Branch":1},
+      "separation_strategy": {
+        "families": ["gcs", "tdfi"],
+        "node_limit": "*:1",
+        "improvement": "*:0.1"
+      }
     }
   ]
 }

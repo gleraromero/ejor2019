@@ -4,77 +4,117 @@
     {
       "name": "TTBF (makespan)",
       "executable": "ejor2019",
-      "model_type": "cttbf",
-      "time_limit": 7200,
+      "model_type": "ttbf",
+      "start_type": "bks",
+      "time_limit": 180,
       "is_tw": true,
       "fix_start_to_zero": true,
       "obj_duration": true,
-      "cplex_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma"],
+        "node_limit": "*:1"
+      }
     },
     {
       "name": "CTTBF-basic (makespan)",
       "executable": "ejor2019",
       "model_type": "cttbf",
-      "time_limit": 7200,
+      "start_type": "bks",
+      "time_limit": 180,
       "is_tw": true,
-      "is_fz": true,
+      "fix_start_to_zero": true,
       "obj_duration": true,
-      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma"],
+        "node_limit": "*:1"
+      }
     },
     {
       "name": "CTTBF-TDFI (makespan)",
       "executable": "ejor2019",
       "model_type": "cttbf",
-      "time_limit": 7200,
+      "start_type": "bks",
+      "time_limit": 180,
       "is_tw": true,
       "fix_start_to_zero": true,
       "obj_duration": true,
-      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma", "tdfi"],
+        "node_limit": "*:1"
+      }
     },
     {
       "name": "CTTBF-TDCSI (makespan)",
       "executable": "ejor2019",
       "model_type": "cttbf",
-      "time_limit": 7200,
+      "start_type": "bks",
+      "time_limit": 180,
       "is_tw": true,
       "fix_start_to_zero": true,
       "obj_duration": true,
-      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma", "tdcsi"],
+        "node_limit": "*:1"
+      }
     },
     {
       "name": "TTBF (duration)",
       "executable": "ejor2019",
-      "model_type": "cttbf",
-      "time_limit": 7200,
+      "model_type": "ttbf",
+      "start_type": "bks",
+      "time_limit": 180,
       "is_tw": true,
-      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma"],
+        "node_limit": "*:1"
+      }
     },
     {
       "name": "CTTBF-basic (duration)",
       "executable": "ejor2019",
       "model_type": "cttbf",
-      "time_limit": 7200,
+      "start_type": "bks",
+      "time_limit": 180,
       "is_tw": true,
       "obj_duration": true,
-      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma"],
+        "node_limit": "*:1"
+      }
     },
     {
       "name": "CTTBF-TDFI (duration)",
       "executable": "ejor2019",
       "model_type": "cttbf",
-      "time_limit": 7200,
+      "start_type": "bks",
+      "time_limit": 180,
       "is_tw": true,
       "obj_duration": true,
-      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma", "tdfi"],
+        "node_limit": "*:1"
+      }
     },
     {
       "name": "CTTBF-TDCSI (duration)",
       "executable": "ejor2019",
       "model_type": "cttbf",
-      "time_limit": 7200,
+      "start_type": "bks",
+      "time_limit": 180,
       "is_tw": true,
       "obj_duration": true,
-      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2}
+      "solver_config": {"CPX_PARAM_NODELIM":1, "CPXPARAM_MIP_Tolerances_MIPGap":0.000001, "CPXPARAM_Parallel":1, "CPXPARAM_Threads":1, "CPXPARAM_MIP_Strategy_StartAlgorithm":2, "CPXPARAM_LPMethod":2},
+      "separation_strategy": {
+        "families": ["gcs", "pi", "sigma", "pisigma", "tdcsi"],
+        "node_limit": "*:1"
+      }
     }
   ]
 }
