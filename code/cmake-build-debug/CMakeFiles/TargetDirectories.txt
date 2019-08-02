@@ -1,6 +1,0 @@
-/home/gleraromero/Repositories/ejor2019/code/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/gleraromero/Repositories/ejor2019/code/cmake-build-debug/CMakeFiles/ejor2019.dir
-/home/gleraromero/Repositories/ejor2019/code/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/gleraromero/Repositories/ejor2019/code/cmake-build-debug/goc/CMakeFiles/rebuild_cache.dir
-/home/gleraromero/Repositories/ejor2019/code/cmake-build-debug/goc/CMakeFiles/goc.dir
-/home/gleraromero/Repositories/ejor2019/code/cmake-build-debug/goc/CMakeFiles/edit_cache.dir

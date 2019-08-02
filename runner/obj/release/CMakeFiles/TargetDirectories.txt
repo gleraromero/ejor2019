@@ -1,6 +1,0 @@
-/home/gleraromero/Repositories/ejor2019/runner/obj/release/CMakeFiles/rebuild_cache.dir
-/home/gleraromero/Repositories/ejor2019/runner/obj/release/CMakeFiles/ejor2019.dir
-/home/gleraromero/Repositories/ejor2019/runner/obj/release/CMakeFiles/edit_cache.dir
-/home/gleraromero/Repositories/ejor2019/runner/obj/release/goc/CMakeFiles/rebuild_cache.dir
-/home/gleraromero/Repositories/ejor2019/runner/obj/release/goc/CMakeFiles/goc.dir
-/home/gleraromero/Repositories/ejor2019/runner/obj/release/goc/CMakeFiles/edit_cache.dir

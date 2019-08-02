@@ -1,5 +1,0 @@
-/home/gleraromero/Applications/clion/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/gleraromero/Repositories/ejor2019/code
--- Compiling in Debug Mode
--- Configuring done
--- Generating done
--- Build files have been written to: /home/gleraromero/Repositories/ejor2019/code/cmake-build-debug
