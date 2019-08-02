@@ -109,12 +109,12 @@ LinearFunction operator*(const LinearFunction& f, const LinearFunction& g)
 // Returns: h(x) = f(x)+a.
 LinearFunction operator+(const LinearFunction& f, double a)
 {
-	return LinearFunction(Point2D(f.domain.left, f.image.left+a), Point2D(f.domain.right, f.image.right+a));
+	return LinearFunction(Point2D(f.domain.left, f.Value(f.domain.left)+a), Point2D(f.domain.right, f.Value(f.domain.right)+a));
 }
 
 // Returns: h(x) = f(x)*a.
 LinearFunction operator*(const LinearFunction& f, double a)
 {
-	return LinearFunction(Point2D(f.domain.left, f.image.left*a), Point2D(f.domain.right, f.image.right*a));
+	return LinearFunction(Point2D(f.domain.left, f.Value(f.domain.left)*a), Point2D(f.domain.right, f.Value(f.domain.right)*a));
 }
 } // namespace goc
