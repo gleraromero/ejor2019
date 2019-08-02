@@ -56,7 +56,7 @@ CTTBF::CTTBF(const VRPInstance& vrp)
 	f->AddConstraint(ESUM(j:out(o), x[o][j]).EQ(ESUM(i:in(d), x[i][d]))); // (4)
 	f->AddConstraint(ESUM(j:out(o), x[o][j]).EQ(1.0)); // (4)
 	for (auto k: Vod) f->AddConstraint((ESUM(i:in(k), x[i][k]) - ESUM(j:out(k), x[k][j])).EQ(0)); // (5)
-	for (auto j: Vo) f->AddConstraint(ESUM(i:in(j), t_hat[i][j] + ESUM(m:M_nz[i][j], (1+theta(i,j,m)) * tt[i][j][m]) + ESUM(m:M[i][j], eta(i,j,m) * xx[i][j][m])).EQ(t[j])); // (6)
+	for (auto j: Vo) f->AddConstraint(ESUM(i:in(j), t_hat[i][j] + ESUM(m:M_nz[i][j], (1+theta(i,j,m)) * tt[i][j][m]) + ESUM(m:M[i][j], eta(i,j,m) * xx[i][j][m])).LEQ(t[j])); // (6)
 	for (auto i: Vd) f->AddConstraint(ESUM(j:out(i), t_hat[i][j] + ESUM(m:M_nz[i][j], tt[i][j][m])).EQ(t[i])); // (7)
 	for (auto i: V) for (auto j: out(i)) for(int m: M_nz[i][j]) f->AddConstraint((w(i,j,m) * xx[i][j][m]).LEQ(tt[i][j][m])); // (8)
 	for (auto i: V) for (auto j: out(i)) for(int m: M_nz[i][j]) f->AddConstraint((w(i,j,m+1) * xx[i][j][m]).GEQ(tt[i][j][m])); // (8)
@@ -98,7 +98,6 @@ Valuation CTTBF::SerializeSolution(const Route& r) const
 Route CTTBF::ParseSolution(const Valuation& z) const
 {
 	double t0 = z[t[vrp.o]];
-	double tf = z[t[vrp.d]];
 	GraphPath p = {vrp.o};
 	while (p.back() != vrp.d)
 	{
@@ -107,6 +106,6 @@ Route CTTBF::ParseSolution(const Valuation& z) const
 			if (epsilon_equal(z[x[u][v]], 1.0))
 				p.push_back(v);
 	}
-	return Route(p, t0, tf-t0);
+	return Route(p, t0, vrp.ReadyTime(p, t0)-t0);
 }
 } // namespace euroalio

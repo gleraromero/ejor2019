@@ -42,9 +42,17 @@ void Model::SetObjective(bool obj_duration, bool is_profitable, const vector<Pro
 	}
 }
 
-void Model::AddDurationLimitConstraint()
+void Model::AddDurationLimitConstraint(bool fix_start_to_zero)
 {
 	f->AddConstraint((t[vrp.d] - t[vrp.o]).LEQ(vrp.t_max)); // Constraint (19).
+	if (fix_start_to_zero)
+	{
+		for (Vertex i: vrp.D.Vertices())
+			for (Vertex j: vrp.D.Successors(i))
+				for (int m = 0; m < vrp.tau[i][j].PieceCount(); ++m)
+					if (epsilon_bigger(vrp.tau[i][j].Piece(m).domain.left, vrp.t_max))
+						f->SetVariableBound(xx[i][j][m], 0.0, 0.0);
+	}
 }
 
 void Model::AddCapacityConstraints(bool is_pd)

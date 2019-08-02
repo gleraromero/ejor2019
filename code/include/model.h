@@ -41,7 +41,8 @@ public:
 	void SetObjective(bool obj_duration, bool is_profitable, const std::vector<ProfitUnit>& profits = {});
 	
 	// Adds the duration limit constraint (19).
-	void AddDurationLimitConstraint();
+	// If the start is fixed to 0, then set all variables t_ijm = 0 with w_ijm > t_max.
+	void AddDurationLimitConstraint(bool fix_start_to_zero);
 	
 	// Adds the capacity constraints (18) if is_pd = 0, (22)-(23) if is_pd = 1.
 	//	- is_pd: indicates if the problem is a Pickup and Delivery problem.

@@ -32,10 +32,8 @@ vector<Constraint> TDFI::Separate(const Valuation& z, int node_number, int count
 	vector<Constraint> violated;
 	auto DI = [&] (TDArc e) { return vrp.tau[e.i][e.j].Piece(e.m).domain; };
 	auto AI = [&] (TDArc e) {
-		return Interval(
-			vrp.tau[e.i][e.j].Piece(e.m).domain.left + vrp.tau[e.i][e.j].Piece(e.m).image.left,
-			vrp.tau[e.i][e.j].Piece(e.m).domain.right + vrp.tau[e.i][e.j].Piece(e.m).image.right
-		);
+		auto& p = vrp.tau[e.i][e.j].Piece(e.m);
+		return Interval(p.domain.left + p.Value(p.domain.left), p.domain.right + p.Value(p.domain.right));
 	};
 	
 	// 	1) Fixes a vertex k \in V - {o,d}.

@@ -40,22 +40,52 @@ bool fix_start_to_zero; // Indicates if the start time of routes should be t0==0
 bool obj_duration; 	// Indicates if minimizing duration is in the objective.
 					// (In TDOP instances, objective does not include duration)
 string model_type; // Model type to use "CTTBF" or "TTBF".
+string start_type; // Initial solution type: "heuristic", "bks", "none".
 Duration time_limit; // Exact MIP time limit.
 json solver_config; // Solver parameters.
 SeparationStrategy separation_strategy; // Separation strategy chosen.
 
+bool best_known_solution(const json& solutions, Route* solution)
+{
+	double best_value = INFTY;
+	for (auto& solution_json: solutions)
+	{
+		auto& route = solution_json["routes"][0];
+		if (fix_start_to_zero && epsilon_different(route["t0"], 0.0)) continue;
+		if (best_value > solution_json["value"])
+		{
+			best_value = solution_json["value"];
+			solution->path = GraphPath(route["path"].begin(), route["path"].end());
+			solution->t0 = route["t0"];
+			solution->duration = route["duration"];
+		}
+	}
+	return best_value < INFTY;
+}
+
 // Converts the VRP instance to a time independent one (t_ij = max(\tau_ij(t') : t' \in [0, T]) forall ij \in A).
 // Solves the TI model with a small time limit and gets the BKS as the heuristic solution.
-bool heuristic_solution(const VRPInstance& vrp, const vector<double>& profits,
-						Route* solution, BCExecutionLog* execution_log)
+bool heuristic_solution(const VRPInstance& vrp, const vector<double>& profits, Route* solution,
+	BCExecutionLog* execution_log)
 {
 	// Convert VRP instance to TI.
 	VRPInstance vrp_ti = vrp;
 	for (Arc e: vrp.D.Arcs())
 	{
 		Vertex i = e.tail, j = e.head;
+		
+		// Get maximum travel time of arc without waiting (i.e. arriving at b(j) or later).
+		double tt = 0.0;
+		for (auto& p: vrp.tau[i][j].Pieces())
+			if (epsilon_bigger_equal(p.domain.right+p.Value(p.domain.right), vrp.tw[j].left))
+				tt = max(tt, p.Value(p.domain.right));
+			
+		double l = vrp.tw[i].left;
+		double m = vrp.tw[j].left-tt;
+		double r = vrp.tw[i].right;
 		vrp_ti.tau[i][j] = PWLFunction();
-		vrp_ti.tau[i][j].AddPiece(LinearFunction(Point2D(0.0, vrp.tau[i][j].Image().right), Point2D(vrp.T, vrp.tau[i][j].Image().right)));
+		if (epsilon_bigger(m, vrp_ti.tw[i].left)) vrp_ti.tau[i][j].AddPiece(LinearFunction(Point2D(l, vrp.tw[j].left-l), Point2D(m, tt)));
+		vrp_ti.tau[i][j].AddPiece(LinearFunction(Point2D(max(l,m), tt), Point2D(r, tt)));
 	}
 
 	// Solve model.
@@ -63,14 +93,15 @@ bool heuristic_solution(const VRPInstance& vrp, const vector<double>& profits,
 	model.SetObjective(obj_duration, is_profitable, profits);
 	if (is_tw) model.AddTimeWindowConstraints();
 	if (fix_start_to_zero) model.FixStartTo0();
-	if (is_op) model.AddDurationLimitConstraint();
+	if (is_op) model.AddDurationLimitConstraint(fix_start_to_zero);
 	if (is_cc) model.AddCapacityConstraints(is_pd);
 	if (is_pd) model.AddPickupDeliveryConstraints();
 	if (!is_profitable) model.ForceVisitToAllVertices();
 	
 	BCSolver solver;
-	solver.time_limit = 5.0_sec;
+	solver.time_limit = 2.0_sec;
 	solver.config = solver_config;
+	
 	*execution_log = solver.Solve(model.f, {BCOption::RootInformation, BCOption::CutInformation, BCOption::BestIntSolution, BCOption::ScreenOutput});
 	if (execution_log->best_int_solution.IsSet())
 	{
@@ -80,16 +111,11 @@ bool heuristic_solution(const VRPInstance& vrp, const vector<double>& profits,
 	return execution_log->best_int_solution.IsSet();
 }
 
-// The experiment has the following parameters:
-//	- model_type: string (formulation type)
-//		* "ttbf": full formulation
-//		* "cttbf": compact formulation.
-//	- time_limit: number (time limit in seconds)
 int main()
 {
 	json output; // STDOUT output will go into this JSON.
 	
-	simulate_input_in_debug("instances/guerriero_et_al_2014", "15_70_A_A1", "experiments/tdtsptw.json", "CTTBF-basic (makespan)");
+	simulate_input_in_debug("instances/verbeeck_et_al_2014", "1.a", "experiments/tdop.json", "CTTBF-basic (duration)");
 	
 	json experiment, instance, solutions;
 	cin >> experiment >> instance >> solutions;
@@ -104,12 +130,14 @@ int main()
 	obj_duration = value_or_default(experiment, "obj_duration", false);
 	
 	model_type = value_or_default(experiment, "model_type", "cttbf");
+	start_type = value_or_default(experiment, "start_type", "none");
 	time_limit = Duration(value_or_default(experiment, "time_limit", 7200), DurationUnit::Seconds);
 	solver_config = value_or_default(experiment, "solver_config", json());
 	separation_strategy = value_or_default(experiment, "separation_strategy", SeparationStrategy());
 	
 	// Show experiment details.
 	clog << "Model type: " << model_type << endl;
+	clog << "Start type: " << start_type << endl;
 	clog << "Time limit: " << time_limit << "sec." << endl;
 	if (is_profitable) clog << "- Profitable" << endl;
 	if (is_pd) clog << "- Pickup and delivery" << endl;
@@ -139,7 +167,7 @@ int main()
 	model->SetObjective(obj_duration, is_profitable, profits);
 	if (is_tw) model->AddTimeWindowConstraints();
 	if (fix_start_to_zero) model->FixStartTo0();
-	if (is_op) model->AddDurationLimitConstraint();
+	if (is_op) model->AddDurationLimitConstraint(fix_start_to_zero);
 	if (is_cc) model->AddCapacityConstraints(is_pd);
 	if (is_pd) model->AddPickupDeliveryConstraints();
 	if (!is_profitable) model->ForceVisitToAllVertices();
@@ -166,16 +194,29 @@ int main()
 	solver.separation_strategy.SetSeparationRoutine("tdfi", &tdfi);
 	solver.separation_strategy.SetSeparationRoutine("tdcsi", &tdcsi);
 
-	// Execute initial heuristic.
-	clog << "Executing initial heuristic" << endl;
-	Route heuristic_route;
-	BCExecutionLog heuristic_log;
-	if (heuristic_solution(vrp, profits, &heuristic_route, &heuristic_log))
+	if (start_type == "heuristic")
 	{
-		solver.initial_solutions.push_back(model->SerializeSolution(heuristic_route));
-		output["Heuristic solution"] = VRPSolution(model->f->EvaluateValuation(model->SerializeSolution(heuristic_route)), {heuristic_route});
+		// Execute initial heuristic.
+		clog << "Executing initial heuristic" << endl;
+		Route heuristic_route;
+		BCExecutionLog heuristic_log;
+		if (heuristic_solution(vrp, profits, &heuristic_route, &heuristic_log))
+		{
+			solver.initial_solutions.push_back(model->SerializeSolution(heuristic_route));
+			output["Initial solution"] = VRPSolution(model->f->EvaluateValuation(model->SerializeSolution(heuristic_route)), {heuristic_route});
+		}
+		output["Heuristic"] = heuristic_log;
 	}
-	output["Heuristic"] = heuristic_log;
+	else if (start_type == "bks")
+	{
+		clog << "Initial solution: BKS" << endl;
+		Route bks;
+		if (best_known_solution(solutions, &bks))
+		{
+			solver.initial_solutions.push_back(model->SerializeSolution(bks));
+			output["Initial solution"] = VRPSolution(model->f->EvaluateValuation(model->SerializeSolution(bks)), {bks});
+		}
+	}
 
 	// Solve the model.
 	auto log = solver.Solve(model->f, {BCOption::BestIntSolution, BCOption::CutInformation, BCOption::RootInformation});

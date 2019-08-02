@@ -26,10 +26,8 @@ vector<Constraint> TDCSI::Separate(const Valuation& z, int node_number, int coun
 	auto DI = [&] (TDArc e) { return vrp.tau[e.i][e.j].Piece(e.m).domain; };
 	// AI(e) = Arrival interval of arc e.
 	auto AI = [&] (TDArc e) {
-		return Interval(
-			vrp.tau[e.i][e.j].Piece(e.m).domain.left + vrp.tau[e.i][e.j].Piece(e.m).image.left,
-			vrp.tau[e.i][e.j].Piece(e.m).domain.right + vrp.tau[e.i][e.j].Piece(e.m).image.right
-		);
+		auto& p = vrp.tau[e.i][e.j].Piece(e.m);
+		return Interval(p.domain.left + p.Value(p.domain.left), p.domain.right + p.Value(p.domain.right));
 	};
 	// Indicates if f is successor of e.
 	auto is_successor = [&] (TDArc e, TDArc f) { return e.j == f.i && AI(e).Intersects(DI(f)); };

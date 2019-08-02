@@ -50,7 +50,7 @@ TTBF::TTBF(const VRPInstance& vrp)
 	f->AddConstraint(ESUM(j:out(o), x[o][j]).EQ(ESUM(i:in(d), x[i][d]))); // (4)
 	f->AddConstraint(ESUM(j:out(o), x[o][j]).EQ(1.0)); // (4)
 	for (auto k: Vod) f->AddConstraint((ESUM(i:in(k), x[i][k]) - ESUM(j:out(k), x[k][j])).EQ(0)); // (5)
-	for (auto j: Vo) f->AddConstraint(ESUM(i:in(j), ESUM(m:M[i][j], (1+theta(i,j,m)) * tt[i][j][m] + eta(i,j,m) * xx[i][j][m])).EQ(t[j])); // (6)
+	for (auto j: Vo) for (auto i: in(j)) f->AddConstraint(ESUM(m:M[i][j], (1+theta(i,j,m)) * tt[i][j][m] + eta(i,j,m) * xx[i][j][m]).LEQ(t[j])); // (6)
 	for (auto i: Vd) f->AddConstraint(ESUM(j:out(i), ESUM(m:M[i][j], tt[i][j][m])).EQ(t[i])); // (7)
 	for (auto i: V) for (auto j: out(i)) for(int m: M[i][j]) f->AddConstraint((w(i,j,m) * xx[i][j][m]).LEQ(tt[i][j][m])); // (8)
 	for (auto i: V) for (auto j: out(i)) for(int m: M[i][j]) f->AddConstraint((w(i,j,m+1) * xx[i][j][m]).GEQ(tt[i][j][m])); // (8)
@@ -98,6 +98,6 @@ Route TTBF::ParseSolution(const Valuation& z) const
 			if (epsilon_equal(z[x[u][v]], 1.0))
 				p.push_back(v);
 	}
-	return Route(p, t0, tf-t0);
+	return Route(p, t0, vrp.ReadyTime(p,t0)-t0);
 }
 } // namespace euroalio
