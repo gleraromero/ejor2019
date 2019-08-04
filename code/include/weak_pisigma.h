@@ -34,7 +34,8 @@ public:
 private:
 	VRPInstance vrp;
 	goc::Matrix<goc::Variable> x;
-	goc::Matrix<bool> P; // Precedence matrix, P[i][j] = true if i is a predecessor of j..
+	goc::Matrix<bool> P; // Precedence matrix, P[i][j] = true if i is a predecessor of j.
+	goc::Matrix<bool> Pnt; // (Non-transitive) precedence matrix, Pnt[i][j] = true if i < j, and no k exists such that i < k < j.
 };
 } // namespace ejor2019
 

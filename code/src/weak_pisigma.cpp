@@ -11,6 +11,7 @@ using namespace goc;
 
 namespace ejor2019
 {
+int counasdt = 0;
 WeakPiSigma::WeakPiSigma(const VRPInstance& vrp, const Matrix<Variable>& x) : vrp(vrp), x(x), P(vrp.D.VertexCount())
 {
 	// Initialize precedence digraph.
@@ -20,6 +21,21 @@ WeakPiSigma::WeakPiSigma(const VRPInstance& vrp, const Matrix<Variable>& x) : vr
 			if (epsilon_smaller(vrp.tw[i].right, vrp.tw[j].left))
 				P[i][j] = true;
 	for (Vertex i: exclude(vrp.D.Vertices(), {vrp.o, vrp.d})) P[vrp.o][i] = P[i][vrp.d] = true;
+	
+	// Non transitive precedences.
+	Pnt = P;
+	for (Vertex i: vrp.D.Vertices())
+	{
+		for (Vertex j: vrp.D.Vertices())
+		{
+			if (!Pnt[i][j]) continue;
+			for (Vertex k: vrp.D.Vertices()) if (P[i][k] && P[k][j])
+			{
+				Pnt[i][j] = false;
+				break;
+			}
+		}
+	}
 }
 
 vector<Constraint> WeakPiSigma::Separate(const Valuation& z, int node_number, int count_limit, double node_bound) const
@@ -39,7 +55,7 @@ vector<Constraint> WeakPiSigma::Separate(const Valuation& z, int node_number, in
 	{
 		for (Vertex j: exclude(D.Vertices(), {i, vrp.o, vrp.d}))
 		{
-			if (!P[i][j]) continue; // We need that i < j.
+			if (!Pnt[i][j]) continue; // We need that i < j.
 			vector<bool> Q(D.VertexCount(), false); // Q[i] indicates if i \in Q.
 			Q[vrp.o] = Q[vrp.d] = true;
 			for (Vertex k: D.Vertices()) if (P[k][i]) Q[k] = true; // Q[k] = true if k < i.
@@ -67,6 +83,7 @@ vector<Constraint> WeakPiSigma::Separate(const Valuation& z, int node_number, in
 							left += 1.0 * x[u][v];
 						
 				violated.push_back(left.GEQ(1.0));
+				
 			}
 		}
 	}
