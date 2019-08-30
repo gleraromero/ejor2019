@@ -26,6 +26,7 @@ stringstream custom_cin;
 void simulate_runner_input(const string& dataset_dir, const string& instance_name, const string& experiment_path,
 							 const string& experiment_name)
 {
+#ifndef RUNNER
 	// Read experiments_old from file.
 	ifstream experiment_file(experiment_path);
 	if (!experiment_file.good()) fail("The experiment file does not exist.");
@@ -55,5 +56,6 @@ void simulate_runner_input(const string& dataset_dir, const string& instance_nam
 	
 	// Move the stream custon_cin to cin.
 	cin.rdbuf(custom_cin.rdbuf());
+#endif
 }
 } // namespace goc
