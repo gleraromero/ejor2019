@@ -21,53 +21,20 @@ namespace
 // Returns: INFTY if it is infeasible to depart inside the horizon.
 double departing_time(const json& instance, Arc e, double tf)
 {
-	vector<Interval> tw = instance["time_windows"];
-	int c = instance["clusters"][e.tail][e.head]; // cluster of arc e.
-	vector<Interval> T = instance["speed_zones"]; // T[k] = speed zone k.
-	vector<double> speed = instance["cluster_speeds"][c]; // speed[k] = speed of traversing e in speed zone k.
-	double d = instance["distances"][e.tail][e.head]; // distance of arc e.
-	if (epsilon_smaller(tf, tw[e.head].left)) return INFTY;
-	double t = min(tf, tw[e.head].right);
-	for (int k = (int)T.size()-1; k >= 0; --k)
-	{
-		if (epsilon_equal(d, 0.0)) break;
-		if (epsilon_bigger(T[k].left, tf)) continue;
-		double remaining_time_in_k = min(T[k].right, tf) - T[k].left;
-		double time_to_complete_d_in_k = d / speed[k];
-		double time_in_k = min(remaining_time_in_k, time_to_complete_d_in_k);
-		t -= time_in_k;
-		d -= time_in_k * speed[k];
-	}
-	if (epsilon_bigger(d, 0.0)) return INFTY;
-	if (epsilon_smaller(t, tw[e.tail].left)) return INFTY;
-	return t;
+	PWLFunction tau_e = instance["travel_times"][e.tail][e.head];
+	PWLFunction arr_e = tau_e + PWLFunction::IdentityFunction(dom(tau_e));
+	if (epsilon_smaller(tf, min(img(arr_e)))) return INFTY;
+	else if (epsilon_bigger(tf, max(img(arr_e)))) return max(dom(arr_e));
+	return arr_e.PreValue(tf);
 }
 
 // Calculates the travel time to traverse arc e departing at t0.
 // Returns: INFTY if it is infeasible to arrive inside the horizon.
 double travel_time(const json& instance, Arc e, double t0)
 {
-	vector<Interval> tw = instance["time_windows"];
-	int c = instance["clusters"][e.tail][e.head]; // cluster of arc e.
-	vector<Interval> T = instance["speed_zones"]; // T[k] = speed zone k.
-	vector<double> speed = instance["cluster_speeds"][c]; // speed[k] = speed of traversing e in speed zone k.
-	double d = instance["distances"][e.tail][e.head]; // distance of arc e.
-	if (epsilon_bigger(t0, tw[e.tail].right)) return INFTY;
-	double t = max(t0, tw[e.tail].left);
-	for (int k = 0; k < T.size(); ++k)
-	{
-		if (epsilon_equal(d, 0.0)) break;
-		if (epsilon_smaller(T[k].right, t0)) continue;
-		double remaining_time_in_k = T[k].right - max(T[k].left, t0);
-		double time_to_complete_d_in_k = d / speed[k];
-		double time_in_k = min(remaining_time_in_k, time_to_complete_d_in_k);
-		t += time_in_k;
-		d -= time_in_k * speed[k];
-	}
-	if (epsilon_bigger(t, tw[e.head].right)) return INFTY;
-	if (epsilon_bigger(d, 0.0)) return INFTY;
-	t = max(t, tw[e.head].left);
-	return t-t0;
+	PWLFunction tau_e = instance["travel_times"][e.tail][e.head];
+	if (!tau_e.Domain().Includes(t0)) return INFTY;
+	return tau_e(t0);
 }
 
 // Returns: the latest we can arrive to k if departing from i (and traversing arc (i, k)) without waiting.
@@ -88,64 +55,19 @@ double earliest_departure(json& instance, Vertex i, Vertex k)
 }
 
 // Earliest arrival time from i to all vertices if departing at a_i.
-// Runs a time-dependent dijkstra.
 vector<double> compute_EAT(json& instance, Vertex i)
 {
-	Digraph D = instance["digraph"];
-	vector<Interval> tw = instance["time_windows"];
-	priority_queue<pair<double, Vertex>, vector<pair<double, Vertex>>, greater<>> q;
-	vector<bool> visited(D.VertexCount(), false);
-	vector<double> EAT(D.VertexCount(), INFTY);
-	q.push({tw[i].left, i});
-	while (!q.empty())
-	{
-		double t; Vertex v;
-		tie(t, v) = q.top();
-		q.pop();
-		if (visited[v]) continue;
-		visited[v] = true;
-		EAT[v] = t;
-		for (auto& w: D.Successors(v))
-		{
-			if (!visited[w])
-			{
-				double tt = t + travel_time(instance, {v, w}, t);
-				if (tt != INFTY) q.push({tt, w});
-			}
-		}
-	}
-	return EAT;
+	return compute_earliest_arrival_time(instance["digraph"], i, instance["time_windows"][i][0], [&] (Vertex u, Vertex v, double t0) {
+		return travel_time(instance, {u, v}, t0);
+	});
 }
 
 // Latest departure time from all vertices to j if arriving to j at tf.
-// Runs a time-dependent dijkstra.
 vector<double> compute_LDT(json& instance, Vertex j)
 {
-	Digraph D = instance["digraph"];
-	vector<Interval> tw = instance["time_windows"];
-	priority_queue<pair<double, Vertex>> q;
-	vector<bool> visited(D.VertexCount(), false);
-	vector<double> LDT(D.VertexCount(), -INFTY);
-	q.push({tw[j].right, j});
-	while (!q.empty())
-	{
-		double t; Vertex v;
-		tie(t, v) = q.top();
-		q.pop();
-		if (visited[v]) continue;
-		visited[v] = true;
-		if (t == INFTY) continue;
-		LDT[v] = t;
-		for (auto& w: D.Predecessors(v))
-		{
-			if (!visited[w])
-			{
-				double dep = departing_time(instance, {w,v}, t);
-				if (dep != INFTY) q.push({dep, w});
-			}
-		}
-	}
-	return LDT;
+	return compute_latest_departure_time(instance["digraph"], j, instance["time_windows"][j][1], [&] (Vertex u, Vertex v, double t0) {
+		return departing_time(instance, {u, v}, t0);
+	});
 }
 
 // Removes the arc ij from the instance.
@@ -242,8 +164,7 @@ void preprocess_time_windows(json& instance, bool is_profitable)
 	for (Arc ij: D.Arcs())
 	{
 		int i = ij.tail, j = ij.head;
-		if (epsilon_bigger(EAT[i][j], b(j))) remove_arc(instance, i, j);
-		else if (epsilon_bigger(a(i)+travel_time(instance, {i, j}, a(i)), b(j))) remove_arc(instance, i, j);
+		if (epsilon_bigger(a(i)+travel_time(instance, {i, j}, a(i)), b(j))) remove_arc(instance, i, j);
 	}
 	
 	// Only for Non Profitable instances (i.e. must visit all vertices).
@@ -270,7 +191,7 @@ void preprocess_time_windows(json& instance, bool is_profitable)
 		
 		// Remove transtive arcs (if i < k && k < j then remove (i, j)).
 		auto predecesor = [&](Vertex i, Vertex j) {
-			return i == o || j == d || epsilon_smaller(b(i), a(j) || epsilon_bigger(EAT[j][i], b(i)));
+			return i == o || j == d || epsilon_smaller(b(i), a(j)) || epsilon_bigger(EAT[j][i], b(i));
 		};
 		for (Vertex i: V)
 			for (Vertex j: V)

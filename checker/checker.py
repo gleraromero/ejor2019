@@ -11,13 +11,13 @@ def read_json_from_file(file_path):
 		return json.loads(f.read())
 
 # Returns: text in color blue for console.
-def blue(text): return "\033[94m" + text + "\033[0m"
+def blue(text): return F"\033[94m{text}\033[0m"
 # Returns: text in color red for console.
-def red(text): return "\033[91m" + text + "\033[0m"
+def red(text): return F"\033[91m{text}\033[0m"
 # Returns: text in color green for console.
-def green(text): return "\033[92m" + text + "\033[0m"
+def green(text): return F"\033[92m{text}\033[0m"
 # Returns: text in color purple for console.
-def purple(text): return "\033[95m" + text + "\033[0m"
+def purple(text): return F"\033[95m{text}\033[0m"
 
 INFTY = 10e8; EPS = 10e-6
 def epsilon_equal(a, b): return abs(a - b) < EPS
@@ -115,9 +115,10 @@ def ready_time(instance, path, t0):
 		i = path[k] 
 		j = path[k+1]
 		q += d[j]
-		t = max(t+travel_time(instance, i, j, t), a[j]) + s[j]
+		t = max(t+travel_time(instance, i, j, t), a[j])
 		if epsilon_bigger(q, Q): return INFTY
 		if epsilon_bigger(t, b[j]): return INFTY
+		t += s[j]
 	if epsilon_bigger(t-t0, t_max): return INFTY
 	return t
 
@@ -140,6 +141,9 @@ def main():
 	ok = 0
 	wrong = 0
 	suboptimal = 0
+	skip = 0
+	mlim = 0
+	error = 0
 	for output_file in output_files:
 		output_file_json = json.loads(output_file.read())
 		print(F"Checking {output_file.name}")
@@ -148,6 +152,14 @@ def main():
 			dataset_name = output["dataset_name"]
 			instance_name = output["instance_name"]
 			experiment_name = output["experiment_name"]
+			if output["exit_code"] == -6:
+				mlim += 1
+				print(F"Checking {experiment_name} - {dataset_name} {instance_name}: {purple('Memory limit.')}")
+				continue
+			if output["exit_code"] != 0:
+				error += 1
+				print(F"Checking {experiment_name} - {dataset_name} {instance_name}: {purple('Exit code: ' + output['exit_code'])}")
+				continue
 
 			instance = read_instance(dataset_name, instance_name)
 			tags = []
@@ -155,8 +167,9 @@ def main():
 			if "duration" in experiment_name: tags.append("DURATION")
 			bks = best_known_solution(dataset_name, instance_name, tags)
 
-			opt_found = output["stdout"]["Exact"]["status"] == "Optimum" # Indicates if the optimum solution was found.
-			if "Best solution" in output["stdout"]: 
+			status = output["stdout"]["Exact"]["status"]
+			opt_found = status == "Optimum" or status == "Finished" # Indicates if the optimum solution was found.
+			if "Best solution" in output["stdout"]:
 				solution = output["stdout"]["Best solution"]
 				errors = []
 				valid = check_routes(instance, solution, errors)
@@ -170,9 +183,11 @@ def main():
 					print(blue(F"Suboptimal - BKS: {bks} - Obtained: {solution}"))
 				else:
 					ok += 1
+			else:
+				print(F"Checking {experiment_name} - {dataset_name} {instance_name}: {purple('No solution (' + status + ')')}")
+				skip += 1
 
-
-	print(green(F"ok: {ok}"), red(F"wrong: {wrong}"), blue(F"suboptimal: {suboptimal}"))
+	print(green(F"ok: {ok}"), red(F"wrong: {wrong}"), blue(F"suboptimal: {suboptimal}"), purple(F"skipped: {skip}"), purple(F"memlim: {mlim}"), purple(F"error: {error}"))
 
 if __name__== "__main__":
   main()

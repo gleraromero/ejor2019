@@ -111,11 +111,11 @@ bool heuristic_solution(const VRPInstance& vrp, const vector<double>& profits, R
 	return execution_log->best_int_solution.IsSet();
 }
 
-int main()
+int main(int argc, char** argv)
 {
 	json output; // STDOUT output will go into this JSON.
 	
-	simulate_input_in_debug("instances/verbeeck_et_al_2014", "1.a", "experiments/tdop.json", "CTTBF-basic (duration)");
+	if (argc > 1) simulate_runner_input("instances/verbeeck_et_al_2014", "1.a", "experiments/tdop.json", "CTTBF-basic (duration)");
 	
 	json experiment, instance, solutions;
 	cin >> experiment >> instance >> solutions;
@@ -150,8 +150,8 @@ int main()
 	// Preprocess instance JSON.
 	if (is_cc) preprocess_capacity(instance);
 	preprocess_travel_times(instance);
-	if (is_tw) preprocess_time_windows(instance, is_profitable);
 	preprocess_service_waiting(instance);
+	if (is_tw) preprocess_time_windows(instance, is_profitable);
 	
 	// Parse instance.
 	VRPInstance vrp = instance;
