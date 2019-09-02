@@ -34,18 +34,18 @@ output_files = args["output_files"]
 # Show parameters.
 print(blue(F"Output files: {[e.name for e in output_files]}"))
 
-instance_cache = {}
+index_cache = {}
 
 def read_instance(dataset_name, instance_name):
-	if not dataset_name in instance_cache or not instance_name in instance_cache[dataset_name]:
-		index = read_json_from_file(F"{INSTANCES_DIR}/{dataset_name}/index.json")
-		if not dataset_name in instance_cache: instance_cache[dataset_name] = {}
-		instance_cache[dataset_name][instance_name] = {}
-		for entry in index:
-			if entry["instance_name"] == instance_name:
-				instance_cache[dataset_name][instance_name] = read_json_from_file(F"{INSTANCES_DIR}/{dataset_name}/{entry['file_name']}")
+	if not dataset_name in index_cache:
+		index_cache[dataset_name] = read_json_from_file(F"{INSTANCES_DIR}/{dataset_name}/index.json")
 
-	return instance_cache[dataset_name][instance_name]
+	index = index_cache[dataset_name]
+	instance = {}
+	for entry in index:
+		if entry["instance_name"] == instance_name:
+			instance = read_json_from_file(F"{INSTANCES_DIR}/{dataset_name}/{entry['file_name']}")
+	return instance
 
 # Returns: the best known solution (with minimum value) among all with the specific tags.
 def best_known_solution(dataset_name, instance_name, tags):
@@ -158,7 +158,7 @@ def main():
 				continue
 			if output["exit_code"] != 0:
 				error += 1
-				print(F"Checking {experiment_name} - {dataset_name} {instance_name}: {purple('Exit code: ' + output['exit_code'])}")
+				print(F"Checking {experiment_name} - {dataset_name} {instance_name}: {purple('Exit code: ' + str(output['exit_code']))}")
 				continue
 
 			instance = read_instance(dataset_name, instance_name)
