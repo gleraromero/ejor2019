@@ -115,7 +115,7 @@ int main(int argc, char** argv)
 {
 	json output; // STDOUT output will go into this JSON.
 	
-	simulate_runner_input("instances/verbeeck_et_al_2014", "1.a", "experiments/tdop.json", "CTTBF-basic (duration)");
+	simulate_runner_input("instances/guerriero_et_al_2014b", "15_70_A_100_A1", "experiments/tdtsptw.json", "CTTBF-basic (makespan)");
 	
 	json experiment, instance, solutions;
 	cin >> experiment >> instance >> solutions;

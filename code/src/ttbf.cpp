@@ -28,6 +28,8 @@ TTBF::TTBF(const VRPInstance& vrp)
 	vector<Vertex> Vod = exclude(V, {o, d}); // Vod = V - {o, d}.
 	Matrix<vector<int>> M(n, n); // M[i][j] = { m \in 0...|T^ij_m|-1 }
 	for (Arc e: A) M[e.tail][e.head] = range(0, vrp.tau[e.tail][e.head].PieceCount());
+	int M_max = 0;
+	for (Arc e: A) M_max = max(M_max, (int)M[e.tail][e.head].size());
 	
 	// Create formulation.
 	f = BCSolver::NewFormulation();
@@ -35,9 +37,9 @@ TTBF::TTBF(const VRPInstance& vrp)
 	// Add variables to formulation.
 	y = vector<Variable>(n);
 	x = Matrix<Variable>(n, n);
-	xx = Matrix<vector<Variable>>(n, n, vector<Variable>(n));
+	xx = Matrix<vector<Variable>>(n, n, vector<Variable>(M_max));
 	t = vector<Variable>(n);
-	tt = Matrix<vector<Variable>>(n, n, vector<Variable>(n));
+	tt = Matrix<vector<Variable>>(n, n, vector<Variable>(M_max));
 	for (Vertex i: V) y[i] = f->AddVariable("y_" + STR(i), VariableDomain::Binary, 0.0, 1.0);
 	for (Arc e: A) x[e.tail][e.head] = f->AddVariable("x_" + STR(e.tail) + "_" + STR(e.head), VariableDomain::Binary, 0.0, 1.0);
 	for (Arc e: A) for (int m: M[e.tail][e.head]) xx[e.tail][e.head][m] = f->AddVariable("x_" + STR(e.tail) + "_" + STR(e.head) + "_" + STR(m), VariableDomain::Binary, 0.0, 1.0);
