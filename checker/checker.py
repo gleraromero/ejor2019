@@ -34,18 +34,15 @@ output_files = args["output_files"]
 # Show parameters.
 print(blue(F"Output files: {[e.name for e in output_files]}"))
 
-index_cache = {}
+file_name_by_instance = {}
 
 def read_instance(dataset_name, instance_name):
-	if not dataset_name in index_cache:
-		index_cache[dataset_name] = read_json_from_file(F"{INSTANCES_DIR}/{dataset_name}/index.json")
-
-	index = index_cache[dataset_name]
-	instance = {}
-	for entry in index:
-		if entry["instance_name"] == instance_name:
-			instance = read_json_from_file(F"{INSTANCES_DIR}/{dataset_name}/{entry['file_name']}")
-	return instance
+	if not dataset_name in file_name_by_instance:
+		index = read_json_from_file(F"{INSTANCES_DIR}/{dataset_name}/index.json")
+		file_name_by_instance[dataset_name] = {}
+		for entry in index:
+			file_name_by_instance[dataset_name][entry["instance_name"]] = entry["file_name"]
+	return read_json_from_file(file_name_by_instance[dataset_name][instance_name])
 
 # Returns: the best known solution (with minimum value) among all with the specific tags.
 def best_known_solution(dataset_name, instance_name, tags):
