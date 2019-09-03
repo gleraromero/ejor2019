@@ -41,7 +41,7 @@ def read_instance(dataset_name, instance_name):
 		index = read_json_from_file(F"{INSTANCES_DIR}/{dataset_name}/index.json")
 		file_name_by_instance[dataset_name] = {}
 		for entry in index:
-			file_name_by_instance[dataset_name][entry["instance_name"]] = F"{INSTANCES_DIR}/{dataset_name}}/{entry['file_name']}"
+			file_name_by_instance[dataset_name][entry["instance_name"]] = F"{INSTANCES_DIR}/{dataset_name}/{entry['file_name']}"
 	return read_json_from_file(file_name_by_instance[dataset_name][instance_name])
 
 # Returns: the best known solution (with minimum value) among all with the specific tags.
