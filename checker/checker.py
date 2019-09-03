@@ -45,8 +45,11 @@ def read_instance(dataset_name, instance_name):
 	return read_json_from_file(file_name_by_instance[dataset_name][instance_name])
 
 # Returns: the best known solution (with minimum value) among all with the specific tags.
+solutions_cache = {}
 def best_known_solution(dataset_name, instance_name, tags):
-	solutions = read_json_from_file(F"{INSTANCES_DIR}/{dataset_name}/solutions.json")
+	if dataset_name not in solutions_cache:
+		solutions_cache[dataset_name] = read_json_from_file(F"{INSTANCES_DIR}/{dataset_name}/solutions.json")
+	solutions = solutions_cache[dataset_name]
 	bks = {"value":10e8}
 	for s in solutions:
 		if s["instance_name"] == instance_name and s["tags"] == tags and s["value"] <= bks["value"]:
