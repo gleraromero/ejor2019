@@ -143,7 +143,7 @@ def main():
 	suboptimal = 0
 	skip = 0
 	mlim = 0
-	error = 0
+	err = 0
 	for output_file in output_files:
 		output_file_json = json.loads(output_file.read())
 		print(F"Checking {output_file.name}")
@@ -157,7 +157,7 @@ def main():
 				print(F"Checking {experiment_name} - {dataset_name} {instance_name}: {purple('Memory limit.')}")
 				continue
 			if output["exit_code"] != 0:
-				error += 1
+				err += 1
 				print(F"Checking {experiment_name} - {dataset_name} {instance_name}: {purple('Exit code: ' + str(output['exit_code']))}")
 				continue
 
@@ -187,7 +187,7 @@ def main():
 				print(F"Checking {experiment_name} - {dataset_name} {instance_name}: {purple('No solution (' + status + ')')}")
 				skip += 1
 
-	print(green(F"ok: {ok}"), red(F"wrong: {wrong}"), blue(F"suboptimal: {suboptimal}"), purple(F"skipped: {skip}"), purple(F"memlim: {mlim}"), purple(F"error: {error}"))
+	print(green(F"ok: {ok}"), red(F"wrong: {wrong}"), blue(F"suboptimal: {suboptimal}"), purple(F"skipped: {skip}"), purple(F"memlim: {mlim}"), purple(F"error: {err}"))
 
 if __name__== "__main__":
   main()

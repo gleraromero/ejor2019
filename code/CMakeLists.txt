@@ -11,6 +11,11 @@ elseif ("${CMAKE_BUILD_TYPE}" MATCHES debug OR "${CMAKE_BUILD_TYPE}" MATCHES Deb
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
 endif()
 
+if ("${RUNNER}" MATCHES ON)
+    message("-- Runner compilation")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -DRUNNER")
+endif()
+
 # Add include directory.
 include_directories("include/")
 
