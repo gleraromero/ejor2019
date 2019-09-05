@@ -42,11 +42,6 @@ void preprocess_service_waiting(json& instance)
 	if (has_key(instance, "service_times"))
 	{
 		for (Vertex i: D.Vertices()) instance["service_times"][i] = 0.0;
-		Digraph D = instance["digraph"];
-		Matrix<PWLFunction> tau = instance["travel_times"];
-		auto s = [&](Vertex i) -> double { return instance["service_times"][i]; };
-		auto a = [&](Vertex i) -> double { return instance["time_windows"][i][0]; };
-		auto b = [&](Vertex i) -> double { return instance["time_windows"][i][1]; };
 		
 		/// (iii) \tau'_ij(t) = max(a_j, t+\tau_ij(t)) - t + s_j for each ij \in A.
 		for (Vertex i: D.Vertices())
