@@ -1,5 +1,5 @@
 {
-  "datasets": [{"name": "sun_et_al_2018"}],
+  "datasets": [{"name": "euroalio2018"}],
   "experiments": [
     {
       "name": "CTTBF-basic",
