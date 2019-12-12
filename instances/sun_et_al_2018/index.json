@@ -11,6 +11,10 @@
 	"instance_name": "AA20",
 	"tags": ["AA20", "AA", "20"]
 }, {
+	"file_name": "AA25.json",
+	"instance_name": "AA25",
+	"tags": ["AA25", "AA", "25"]
+}, {
 	"file_name": "AA30.json",
 	"instance_name": "AA30",
 	"tags": ["AA30", "AA", "30"]
@@ -62,6 +66,10 @@
 	"file_name": "BB20.json",
 	"instance_name": "BB20",
 	"tags": ["BB20", "BB", "20"]
+}, {
+	"file_name": "BB25.json",
+	"instance_name": "BB25",
+	"tags": ["BB25", "BB", "25"]
 }, {
 	"file_name": "BB30.json",
 	"instance_name": "BB30",
@@ -115,6 +123,10 @@
 	"instance_name": "CC20",
 	"tags": ["CC20", "CC", "20"]
 }, {
+	"file_name": "CC25.json",
+	"instance_name": "CC25",
+	"tags": ["CC25", "CC", "25"]
+}, {
 	"file_name": "CC30.json",
 	"instance_name": "CC30",
 	"tags": ["CC30", "CC", "30"]
@@ -166,6 +178,10 @@
 	"file_name": "DD20.json",
 	"instance_name": "DD20",
 	"tags": ["DD20", "DD", "20"]
+}, {
+	"file_name": "DD25.json",
+	"instance_name": "DD25",
+	"tags": ["DD25", "DD", "25"]
 }, {
 	"file_name": "DD30.json",
 	"instance_name": "DD30",
