@@ -19,7 +19,7 @@ def green(text): return F"\033[92m{text}\033[0m"
 # Returns: text in color purple for console.
 def purple(text): return F"\033[95m{text}\033[0m"
 
-INFTY = 10e8; EPS = 10e-6
+INFTY = 10e8; EPS = 10e-4
 def epsilon_equal(a, b): return abs(a - b) < EPS
 def epsilon_bigger(a, b): return a > b + EPS
 
