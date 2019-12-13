@@ -73,4 +73,4 @@ The checker will go through each instance and validate:
 - Juan José Miranda-Bront
 
 ## License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details.
